@@ -2,8 +2,9 @@ body{
     display: grid;
     grid-template-areas: 
       "header header"
+      "spacer spacer"
       "article nav";
-    grid-template-rows: 10% 90%;  
+    grid-template-rows: 10% 1% 90%;  
     grid-template-columns: 80% 20%;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
@@ -13,7 +14,10 @@ body{
 footer, article, nav{
     padding: 1.2em;
     background: #69cff9;
-    font-family: sans-serif;
+    font-family: Verdana;
+    }
+    #spacer1{
+        grid-area: spacer;
     }
 #pageHeader{
     grid-area: header;
@@ -31,7 +35,8 @@ header{
 .containerHeader{
   display:flex;
   flex-direction: row;
-  justify-content: center;  
+  justify-content: center;
+    
  } 
 .logo{
   padding: 0;
@@ -39,7 +44,7 @@ header{
 }
 .title{
     margin-top: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica;
 }
 li{
   padding: 0.5rem;
@@ -49,12 +54,12 @@ a{
   color: black;
 }
 a:link {
-  color: #cbe948;
+  color: #96C789;
   background-color: transparent;
   text-decoration: none;
 }
 a:hover {
-  color: #b3dfdf;
+  color: #cbe948;
   background-color: transparent;
   text-decoration: none;
 }
@@ -71,48 +76,54 @@ a:active {
     border: none;
     cursor: pointer;
     font-weight: bold;
-  }
-  
-  .dropdown {
+  }  
+.dropdown {
     position: relative;
     display: inline-block;
     background-color: transparent;
-  }
-  
-  .dropdown-content {
+}  
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: transparent;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
-  
-  .dropdown-content a {
+}  
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1}
-  
-  .dropdown:hover .dropdown-content {
+}  
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}  
+.dropdown:hover .dropdown-content {
     display: block;
     background-color: transparent;
-  }
-  
+}  
   .dropdown:hover .dropbtn {
     background-color: #69cff9;
-  }
+}
+.navMain{
+    background-image: url("Images/background_dental_clinic.jpg");
+    background-size: cover;
+}
+hr{
+    border-color:#cbe948;
+    border-style: ridge;
+    border-width: 0.5rem;
+}
 /* Stack the layout on small devices/viewports. */
 @media all and (max-width: 575px) {
     body { 
       grid-template-areas: 
         "header"
+        "spacer"
         "nav"
         "article";
-      grid-template-rows: 10% auto 1fr;  
+      grid-template-rows: 10% 2% auto 1fr;  
       grid-template-columns: 1fr;
    }
 h1{
@@ -123,9 +134,11 @@ h1{
     margin-left: -1rem;
    }
 nav{
-    margin-top: 1rem;
+    margin-top: 0.3rem;
     display:flex;
-
+}
+hr{
+    margin-top: 1rem;
 }
 .Guides1{
 padding-top: 0;
