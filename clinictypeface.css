@@ -1,0 +1,23 @@
+.listTypeface{
+    color:#b0b0b9;
+    font-style: italic;
+}
+.classArticleimageTypeface>img{
+    max-width: 10%;
+    padding: 1rem;
+}
+.articleTitleTypeface{
+    margin: 1rem;
+    margin-top: 0;
+}
+.contHelvetica{
+    display:flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 2rem;
+    background-color: whitesmoke;
+    box-shadow: 0.5rem 0.5rem #b0b0b9;
+    border-radius: 0.5rem; 
+}
+
+

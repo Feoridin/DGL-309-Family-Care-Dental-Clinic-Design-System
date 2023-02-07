@@ -29,7 +29,7 @@ article, nav{
     }
 header{
     padding: 0;
-    background: white;
+    background: white;    
     }
 .containerHeader{
   display:flex;
@@ -113,6 +113,9 @@ a:active {
     border-style: ridge;
     border-width: 0.5rem;   
     margin-bottom: 0;
+    position:sticky;
+    top:0;
+    
 }
 hr{
     border-color:#cbe948;
@@ -142,6 +145,7 @@ h1, h2, h3, h4{
 p{
     margin-left: 1rem;
 }
+
 /* Stack the layout on small devices/viewports. */
 @media all and (min-width: 575px) {
     .dropdown{
@@ -186,8 +190,8 @@ nav{
 .classArticle{
     margin-top:0.5rem;
 }
-.classArticle>img{
-    max-width: 50%;
+.classArticleimage>img{
+    max-width: 80%;
 }
 
 }
