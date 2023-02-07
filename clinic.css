@@ -4,9 +4,9 @@ body{
       "header header"
       "spacer spacer"
       "article nav";
-    grid-template-rows: 10% 1% 90%;  
+    grid-template-rows: 10% 2.25% auto;  
     grid-template-columns: 80% 20%;
-    grid-row-gap: 10px;
+    grid-row-gap: 0;
     grid-column-gap: 10px;
     height: 100vh;
     margin: 0;
@@ -35,12 +35,11 @@ header{
 .containerHeader{
   display:flex;
   flex-direction: row;
-  justify-content: center;
-    
+  justify-content: center;    
  } 
 .logo{
   padding: 0;
-  margin: 0 1rem;
+  margin: 0;
 }
 .title{
     margin-top: 2rem;
@@ -113,7 +112,8 @@ a:active {
 hr{
     border-color:#cbe948;
     border-style: ridge;
-    border-width: 0.5rem;
+    border-width: 0.5rem;   
+    margin-bottom: 0;
 }
 /* Stack the layout on small devices/viewports. */
 @media all and (max-width: 575px) {
