@@ -11,9 +11,8 @@ body{
     height: 100vh;
     margin: 0;
     }  
-footer, article, nav{
-    padding: 1.2em;
-    background: #69cff9;
+article, nav{
+    padding: 0rem;
     font-family: Verdana;
     }
     #spacer1{
@@ -109,13 +108,46 @@ a:active {
     background-image: url("Images/background_dental_clinic.jpg");
     background-size: cover;
 }
-hr{
+.hr1{
     border-color:#cbe948;
     border-style: ridge;
     border-width: 0.5rem;   
     margin-bottom: 0;
 }
+hr{
+    border-color:#cbe948;
+    border-style: ridge;
+    border-width: 0.25rem;      
+}
+.classArticleimage{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.classArticleimage>img{
+    max-width:40%;    
+}
+.Guides1{
+    padding-left: 1rem;
+}
+h1, h2, h3, h4{
+    font-family: Helvetica;
+}
+.articleTitle{
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+p{
+    margin-left: 1rem;
+}
 /* Stack the layout on small devices/viewports. */
+@media all and (min-width: 575px) {
+    .dropdown{
+        visibility: hidden;
+    }
+    }
 @media all and (max-width: 575px) {
     body { 
       grid-template-areas: 
@@ -138,7 +170,7 @@ nav{
     display:flex;
 }
 hr{
-    margin-top: 1rem;
+    margin-top: 1.4rem;
 }
 .Guides1{
 padding-top: 0;
@@ -148,9 +180,14 @@ visibility: hidden;
     margin-bottom: -4rem;
     margin-left:-8rem;
 }
+nav{
+    margin-top: 1.2rem;
 }
-@media all and (min-width: 575px) {
-.dropdown{
-    visibility: hidden;
+.classArticle{
+    margin-top:0.5rem;
 }
+.classArticle>img{
+    max-width: 50%;
+}
+
 }
