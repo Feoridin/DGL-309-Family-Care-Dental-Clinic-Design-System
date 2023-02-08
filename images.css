@@ -1,0 +1,11 @@
+.listImages{
+    color:#b0b0b9;
+    font-style: italic;
+}
+.imageSample{
+    border-radius: 1rem;
+    border-style: ridge;
+    border-color: #b0b0b9;
+    border-width: .5rem;
+    box-shadow: .5rem 1rem #b0b0b1;    
+}
