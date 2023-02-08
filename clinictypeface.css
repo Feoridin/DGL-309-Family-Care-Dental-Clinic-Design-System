@@ -12,6 +12,9 @@
     margin-top: 0;
     padding-left: 1rem;
 }
+.font{
+    padding-left: 2rem;
+}
 .contHelvetica{
     display:flex;
     flex-direction: column;
@@ -21,5 +24,64 @@
     box-shadow: 0.5rem 0.5rem #b0b0b9;
     border-radius: 0.5rem; 
 }
-
+.typoGrid{
+    display: grid;
+    grid-template-areas: 
+      "Grid1 Grid2 Grid3"
+      "Grid4 Grid5 Grid6";
+    grid-template-rows: auto;  
+    grid-template-columns: 35% 30% 35%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+    padding-left: 2rem;
+}
+#idGrid1{
+    grid-area: Grid1;
+}
+#idGrid2{
+grid-area: Grid2;
+}
+#idGrid3{
+    grid-area: Grid3;
+    }
+#idGrid4{
+    grid-area: Grid4;
+}
+#idGrid5{
+grid-area: Grid5;
+}
+#idGrid6{
+    grid-area: Grid6;
+    }
+.Grid1, .Grid3{
+    background-color: aqua;
+}
+.Grid2{
+    background-color: aquamarine;
+}
+.typoHeader{
+    margin-bottom: 0;
+}
+.typoDetails{
+    margin:-1rem;
+    font-family: Helvetica;
+    color:#b0b0b9;
+    font-size:24px;
+}
+.typoDetails2{
+    margin:-1rem;
+    font-family: Helvetica;
+    color:#b0b0b9;
+    font-style: italic;
+    font-size:24px;
+}
+.typoDetails3{
+    margin:-1rem;
+    font-family: Helvetica;
+    color:#b0b0b9;
+    font-weight: bold;
+    font-size:24px;
+}
 
