@@ -5,10 +5,12 @@
 .classArticleimageTypeface>img{
     max-width: 10%;
     padding: 1rem;
+    padding-left: 2rem;
 }
 .articleTitleTypeface{
     margin: 1rem;
     margin-top: 0;
+    padding-left: 1rem;
 }
 .contHelvetica{
     display:flex;
