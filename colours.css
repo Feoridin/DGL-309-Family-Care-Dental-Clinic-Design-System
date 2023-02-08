@@ -1,0 +1,30 @@
+.colGrid{
+    display: grid;
+    grid-template-areas: 
+      "Grid1 Grid2 Grid3"
+      "Grid4 Grid5 Grid6"
+      "Grid7 Grid5 Grid6";
+    grid-template-rows: 30% 30% 30%;  
+    grid-template-columns: 370px 370px 370px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+    padding-left: 2rem;
+    padding-right:2rem;
+}
+#idGrid2{
+    grid-area: Grid2;
+    padding-right: 0;
+    }
+#idGrid3{
+    grid-area: Grid3;
+    padding-left: 0;
+    }
+#idGrid7{
+    grid-area: Grid7;
+}
+.listColours{
+    color:#b0b0b9;
+    font-style: italic;
+}
