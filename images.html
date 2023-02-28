@@ -9,6 +9,8 @@
   <link rel = "stylesheet" href="clinictypeface.css"><!--css style link-->
   <link rel = "stylesheet" href="spacing.css"><!--css style link-->
   <link rel = "stylesheet" href="images.css"><!--css style link-->
+  <script src = "https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?Lang=ruby&amp;skin=sons-of-obsidian"></script>
+  <!--prettify skin themes: default, desert, sunburst, sons-of-obisidian, doxy-->
   <title>Family Care Dental Clinic Design System</title>
 </head>
 <body>
@@ -35,9 +37,10 @@
         <h3>Rounded Corners, Borders and Shadows</h3>
         <span>All Images will have a rounded corner and some will have border and shadow<h3>Sample</h3></span>
         <img class="imageSample" src="Images/FRONTPAGE/DENTALCLINCDAPITANDIPOLOGA.jpg" alt="Family Dental Clinic" style="width:750px">
-        <p>Image Property:</p>
+        <details><p>Image Property:</p>
         <div class="box">
-            <pre>
+            <?prettyify linenums=30?>
+            <pre class = "prettyprint">
                 <code>
                         border-radius: 1rem;
                         border-style: ridge;
@@ -46,6 +49,7 @@
                         box-shadow: .5rem 1rem #b0b0b1;    
                 </code>
             </pre>
+            </details>
         </div>
 
     </div>
