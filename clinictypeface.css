@@ -124,10 +124,10 @@ body{
     grid-template-areas: 
       "header header"
       "spacer spacer"
-      "article nav"
-      "footer nav";
+      "nav article"
+      "nav footer";
     grid-template-rows: 120px 25px auto 700px;  
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 20% 80%;
     grid-row-gap: 0;
     grid-column-gap: 0;
     height: 100vh;
