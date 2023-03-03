@@ -1,0 +1,31 @@
+.primaryfontcontainer{
+    display:flex;
+    flex-direction: row;
+    padding: 1rem;
+    margin-left:2rem;
+    
+}
+.primaryfontregular, .primaryfontitalic, .primaryfontbold{
+    background-color: #96C789 ;
+    margin: 1rem;
+    font-family: Helvetica, sans-serif;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+}
+.prettyprint{
+    font-size:larger;
+    margin-right: 3rem;
+}
+
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 992px) {
+.primaryfontcontainer{
+    flex-direction:column;
+}
+.primaryfontregular, .primaryfontitalic, .primaryfontbold{
+    width: 80%;
+}
+pre{
+    width:80%;
+}
+}

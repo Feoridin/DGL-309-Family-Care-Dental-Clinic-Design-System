@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=html&amp;skin=sunburst"></script>
+  <link rel="icon" href="images/TEETH.ico" type="image/x-icon">
+  <link rel = "stylesheet" href="clinic.css"><!--css style link-->
+  <link rel = "stylesheet" href="style.css"><!--css style link-->
+  <title>Family Care Dental Clinic Design System</title>
+  <!--Resources: https://youtu.be/1op-PqCGdIA - this link is to display code as code in a browser-->
+</head>
+<body>
+  <header id="pageHeader">
+    <div class="containerHeader">
+      <div class = "logo"><!--animated logo gif file-->
+        <a href="home.html"><img src="Images/1x/CAREDENTALCLINICDAPITANDIPOLOG.gif" alt="Family Care Dental Clinci Design System" width="130"></a>
+      </div>
+      <h1 class = "title"><a href="home.html">Family Care Dental Clinic Pattern Library</a></h1>
+    </div>
+  </header>
+  <div id="spacer1"><hr class = "hr1"></div>   
+  <article id="mainArticle" class="classArticle">      
+    <h2 class="articleTitle">Typography</h2> 
+    <hr>
+    <div class = "primaryfont">
+    <h2 class="articleTitle">Primary Font</h2>
+    <h3 class="articleTitle">Helvetica(sans-serif) Font</h3>
+    </div>
+    <div class = "primaryfontcontainer">
+    <div class = "primaryfontregular">
+      <h2>Regular</h2>  
+      <p>the quick brown fox jumps over the head of the lazy dog</p>
+      <p>THE QUICK BROWN FOX JUMPS OVER THE HEAD OF THE LAZDY DOG</p>
+      <p>0 1 2 3 4 5 6 7 8 9</p>
+    </div>
+    <div class = "primaryfontitalic">
+        <h2><em>Italic</em></h2>
+        <p><em>the quick brown fox jumps over the head of the lazy dog</em></p>
+        <p><em>THE QUICK BROWN FOX JUMPS OVER THE HEAD OF THE LAZDY DOG</em></p>
+        <p><em>0 1 2 3 4 5 6 7 8 9</em></p>
+    </div>
+    <div class = "primaryfontbold">
+        <h2>Bold</h2>
+        <p><strong>the quick brown fox jumps over the head of the lazy dog</strong></p>
+        <p><strong>THE QUICK BROWN FOX JUMPS OVER THE HEAD OF THE LAZDY DOG</strong></p>
+        <p><strong>0 1 2 3 4 5 6 7 8 9</strong></p>
+    </div>
+    </div>   
+    <details class = articleTitle style="font-weight:bold">
+        <summary>HTML AND CSS Code</summary>
+    <pre class="prettyprint">
+      <xmp>
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 2</h3>
+        <h4>This is heading 2</h4>
+        <p>This is a paragraph</p>
+      </xmp>  
+    </pre>
+    <pre class="prettyprint">
+      <xmp>
+        h1, h2, h3, h4{
+        font-family: Helvetica,sans-serif;
+        }
+        article, nav, p{
+            font-family: Verdana, sans-serif;    
+        }
+      </xmp>  
+    </pre>
+    </details>
+    
+    
+
+
+    <p>This pattern library houses the fundamental elements of the Family Care Dental Clinic website. 
+      It shows the various parts that make up the site as well as the design concepts that guided its creation.</p><br>
+    <p>The website is powered by:</p>  
+    <div class = "classArticleimage" ><img src="Images/CODESICON.png" alt="Dental Clinic Dapitan"></div>   
+  </article>
+  <nav class="navMain" id="mainNav">
+    <div class = "Guides1"><h3 style="color:#96C789;">Style</h3>
+      <ul style="list-style-type: none">
+        <li><a class = "list1" href="style.html">Typography</a></li>
+        <li><a class = "list1" href="colours.html">Colours</a></li>
+        <li><a class = "list1" href="spacing.html">Spacing</a></li>
+        <li><a class = "list1" href="images.html">Images</a></li>         
+      </ul></div>
+    <div class = "Guides1"><h3>Navigation</h3>
+      <ul style="list-style-type: none">
+        <li><a class = "list1" href="navigation.html">Hamburger menu</a></li>
+        <li><a class = "list1" href="colours.html">Sub menu</a></li>
+        <li><a class = "list1" href="spacing.html">Buttons</a></li>
+        <li><a class = "list1" href="images.html">Breadcrumbs</a></li>         
+      </ul>
+    </div>
+    <div class = "Guides1"><h3>Form</h3>
+      <ul style="list-style-type: none">
+        <li><a class = "list1" href="typography.html">Fields with placeholder text</a></li>
+        <li><a class = "list1" href="colours.html">Labels</a></li>
+        <li><a class = "list1" href="spacing.html">Submit</a></li>        
+      </ul>
+    </div>
+    <div class = "Guides1"><h3>Components</h3>
+      <ul style="list-style-type: none">
+        <li><a class = "list1" href="typography.html">Banner</a></li>
+        <li><a class = "list1" href="colours.html">Cards</a></li>
+        <li><a class = "list1" href="spacing.html">Carousel</a></li>
+        <li><a class = "list1" href="spacing.html">Modals</a></li> 
+        <li><a class = "list1" href="spacing.html">Spinners</a></li>
+        <li><a class = "list1" href="spacing.html">Tables</a></li>         
+      </ul>
+    </div>      
+  </nav>
+  <nav>
+    <section class="top-nav" id = "hamburger">
+      <div>
+        <a href="home.html"><img src="Images/LOGOTEETH.png" alt="Family Care Dental Clinci Design System" width="100"></a>
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
+        <li><a class = "list1" href="style.html">Style</a></li>
+        <li>Navigation</li>
+        <li>Form</li>
+        <li>Components</li>
+      </ul>
+    </section>
+    <hr class = "hr2">
+  </nav>     
+</body>
+</html>
