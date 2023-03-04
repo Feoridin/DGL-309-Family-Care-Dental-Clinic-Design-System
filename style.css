@@ -11,10 +11,29 @@
     font-family: Helvetica, sans-serif;
     padding-left: 1rem;
     border-radius: 0.5rem;
+    border: 1px solid #b0b0b1;
+    box-shadow: 2px 2px #b0b0b1;
+}
+.primaryfontregular2, .primaryfontitalic2, .primaryfontbold2{
+    background-color: #96C789 ;
+    margin: 1rem;
+    
+    font-family: Verdana, sans-serif;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #b0b0b1;
+    box-shadow: 2px 2px #b0b0b1;
 }
 .prettyprint{
     font-size:larger;
-    margin-right: 3rem;
+}
+.articleTitle{
+    margin-right:1rem;
+}
+.containerStyle{
+    padding-top: 0.5rem;
+    font-size: large;
+    
 }
 
 /* Stack the layout on small devices/viewports. */
@@ -25,7 +44,10 @@
 .primaryfontregular, .primaryfontitalic, .primaryfontbold{
     width: 80%;
 }
-pre{
-    width:80%;
+.primaryfontregular2, .primaryfontitalic2, .primaryfontbold2{
+    width: 80%;
+}
+.articleTitle{
+    margin-right:2rem;
 }
 }

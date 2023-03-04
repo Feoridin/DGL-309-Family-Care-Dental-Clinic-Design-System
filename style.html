@@ -10,6 +10,7 @@
   <link rel = "stylesheet" href="style.css"><!--css style link-->
   <title>Family Care Dental Clinic Design System</title>
   <!--Resources: https://youtu.be/1op-PqCGdIA - this link is to display code as code in a browser-->
+  <!--https://alvarotrigo.com/blog/hamburger-menu-css/ - this link is where the hamburger menu code got from-->
 </head>
 <body>
   <header id="pageHeader">
@@ -21,34 +22,70 @@
     </div>
   </header>
   <div id="spacer1"><hr class = "hr1"></div>   
-  <article id="mainArticle" class="classArticle">      
+  <article id="mainArticle" class="classArticle">
+    <div class="containerStyle">
+    <details class = "articleTitle" style="font-weight:bold">
+        <summary>STYLE</summary>
+        <ul style="list-style-type: none">
+            <li><a class = "list1" href="style.html">Typography</a></li>
+            <li><a class = "list1" href="colours.html">Colours</a></li>
+            <li><a class = "list1" href="spacing.html">Spacing</a></li>
+            <li><a class = "list1" href="images.html">Images</a></li>         
+        </ul></div>
+    </details> 
+    </div>        
     <h2 class="articleTitle">Typography</h2> 
     <hr>
     <div class = "primaryfont">
     <h2 class="articleTitle">Primary Font</h2>
-    <h3 class="articleTitle">Helvetica(sans-serif) Font</h3>
+    <h2 class="articleTitle">Helvetica(sans-serif) Font</h2>
     </div>
     <div class = "primaryfontcontainer">
     <div class = "primaryfontregular">
-      <h2>Regular</h2>  
+      <div class="fontcont">  
+      <h3>Regular</h3></div>  
       <p>the quick brown fox jumps over the head of the lazy dog</p>
       <p>THE QUICK BROWN FOX JUMPS OVER THE HEAD OF THE LAZDY DOG</p>
       <p>0 1 2 3 4 5 6 7 8 9</p>
     </div>
     <div class = "primaryfontitalic">
-        <h2><em>Italic</em></h2>
+        <h3><em>Italic</em></h3>
         <p><em>the quick brown fox jumps over the head of the lazy dog</em></p>
         <p><em>THE QUICK BROWN FOX JUMPS OVER THE HEAD OF THE LAZDY DOG</em></p>
         <p><em>0 1 2 3 4 5 6 7 8 9</em></p>
     </div>
     <div class = "primaryfontbold">
-        <h2>Bold</h2>
+        <h3>Bold</h3>
         <p><strong>the quick brown fox jumps over the head of the lazy dog</strong></p>
         <p><strong>THE QUICK BROWN FOX JUMPS OVER THE HEAD OF THE LAZDY DOG</strong></p>
         <p><strong>0 1 2 3 4 5 6 7 8 9</strong></p>
     </div>
-    </div>   
-    <details class = articleTitle style="font-weight:bold">
+    </div>
+    <div class = "primaryfont">
+        <h2 class="articleTitle">Secondary Font</h2>
+        <h2 class="articleTitle">Verdana(sans-serif) Font</h2>
+        </div>
+        <div class = "primaryfontcontainer">
+        <div class = "primaryfontregular2">  
+          <h3>Regular</h3>  
+          <p>the quick brown fox jumps over the head of the lazy dog</p>
+          <p>THE QUICK BROWN FOX JUMPS OVER THE HEAD OF THE LAZDY DOG</p>
+          <p>0 1 2 3 4 5 6 7 8 9</p>
+        </div>
+        <div class = "primaryfontitalic2">
+            <h3><em>Italic</em></h3>
+            <p><em>the quick brown fox jumps over the head of the lazy dog</em></p>
+            <p><em>THE QUICK BROWN FOX JUMPS OVER THE HEAD OF THE LAZDY DOG</em></p>
+            <p><em>0 1 2 3 4 5 6 7 8 9</em></p>
+        </div>
+        <div class = "primaryfontbold2">
+            <h3>Bold</h3>
+            <p><strong>the quick brown fox jumps over the head of the lazy dog</strong></p>
+            <p><strong>THE QUICK BROWN FOX JUMPS OVER THE HEAD OF THE LAZDY DOG</strong></p>
+            <p><strong>0 1 2 3 4 5 6 7 8 9</strong></p>
+        </div>
+        </div>
+    <details class = "articleTitle" style="font-weight:bold">
         <summary>HTML AND CSS Code</summary>
     <pre class="prettyprint">
       <xmp>
@@ -60,15 +97,34 @@
       </xmp>  
     </pre>
     <pre class="prettyprint">
-      <xmp>
+    <xmp>
         h1, h2, h3, h4{
         font-family: Helvetica,sans-serif;
         }
         article, nav, p{
-            font-family: Verdana, sans-serif;    
+        font-family: Verdana, sans-serif;    
         }
+        </xmp>  
+    </pre>
+    </details>
+    <hr>
+    <div class = "primaryfont">
+        <h2 class="articleTitle">Font Sizes</h2>        
+    </div>
+
+   
+    <details class = articleTitle style="font-weight:bold">
+        <summary>HTML AND CSS Code</summary>
+    <pre class="prettyprint">
+      <xmp>
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 2</h3>
+        <h4>This is heading 2</h4>
+        <p>This is a paragraph</p>
       </xmp>  
     </pre>
+    
     </details>
     
     
