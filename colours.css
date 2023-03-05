@@ -1,56 +1,24 @@
-.colGrid{
-    display: grid;
-    grid-template-areas: 
-      "Grid1 Grid2 Grid3"
-      "Grid4 Grid5 Grid6"
-      "Grid7 Grid8 Grid9"
-      "Grid10 Grid11 Grid12";
-      
-    grid-template-rows: 30% 30% 30% 30%;  
-    grid-template-columns: auto;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
-    height: 100vh;
-    margin: 0;
-    padding-left: 2rem;
-    padding-right:2rem;
+.colorcont{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
-#idGrid2{
-    grid-area: Grid2;
-    padding-right: 0;
+.color{
+    border: 1px solid whitesmoke;
+    padding: 1rem;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+}
+.color>img{
+    padding: 0 1rem 0;
+}
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 805px) {
+    .colorcont{
+        display:block;
+        margin: 0 10rem 0 10rem;
     }
-#idGrid3{
-    grid-area: Grid3;
-    padding-left: 0;
+    .color{
+        width: 80%;
+        
     }
-#idGrid7{
-    grid-area: Grid7;
-}
-#idGrid8{
-    grid-area: Grid8;
-}
-#idGrid9{
-    grid-area: Grid9;
-}
-#idGrid10{
-    grid-area: Grid10;
-}
-#idGrid11{
-    grid-area: Grid11;
-}
-#idGrid12{
-    grid-area: Grid12;
-}
-#idFooter{
-    grid-area: footer;
-}
-.listColours{
-    color:#b0b0b9;
-    font-style: italic;
-}
-.classFooter{
-    background-image: url("Images/COLORMAP.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 15rem;
 }

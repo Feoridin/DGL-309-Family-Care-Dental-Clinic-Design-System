@@ -4,121 +4,204 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=html&amp;skin=sunburst"></script>
   <link rel="icon" href="images/TEETH.ico" type="image/x-icon">
   <link rel = "stylesheet" href="clinic.css"><!--css style link-->
-  <link rel = "stylesheet" href="clinictypeface.css"><!--css style link-->
+  <link rel = "stylesheet" href="style.css"><!--css style link-->
   <link rel = "stylesheet" href="colours.css"><!--css style link-->
   <title>Family Care Dental Clinic Design System</title>
+  <!--Resources: https://youtu.be/1op-PqCGdIA - this link is to display code as code in a browser-->
+  <!--https://alvarotrigo.com/blog/hamburger-menu-css/ - this link is where the hamburger menu code got from-->
 </head>
 <body>
-    <header id="pageHeader">
-        <div class="containerHeader">
-            <div class = "logo"><!--animated logo gif file-->
-              <a href="home.html"><img src="Images/1x/CAREDENTALCLINICDAPITANDIPOLOG.gif" alt="Family Care Dental Clinci Design System" width="130"></a>
-            </div>
-            <h1 class = "title"><a href="home.html">Family Care Dental Clinic Pattern Library</a></h1>
-    </header>
-    <div id="spacer1"><hr class="hr1"></div>
-    <article id="mainArticle" class="classArticle">
-        <div class = "classArticleimageTypeface" ><img src="Images/jigsaw.png" alt="Dental Clinic Dapitan"></div>
-        <h2 class="articleTitleTypeface">Colours</h2> 
-        <hr>
-    <div class = "colGrid">
-        <div class = "Grid1" id = "idGrid1">
-            <img src="Images/POWDERBLUE.png" alt="Dental Clinic Dapitan" style = "width: 180px">
-            <span><hr class = ".typohr"><h3>Powder Blue</h3><strong>#B3DFDF &nbsp; &nbsp; RGB: rgb(179,223,223)</strong></span>         
-        </div>
-        <div class = "Grid2" id = "idGrid2">
-            <img src="Images/YELLOWGREEN.png" alt="Dental Clinic Dapitan" style = "width: 180px"><hr>
-            <span><h3>Maximum Green Yellow</h3><strong>#CBE948 &nbsp; &nbsp; RGB: rgb(203,233,72)</strong></span>
-        </div>
-        <div class = "Grid3" id = "idGrid3">
-            <img src="Images/BABYBLUE.png" alt="Dental Clinic Dapitan" style = "width: 180px"><hr>
-            <span><h3>Baby Blue</h3><strong>#69CFF9 &nbsp; &nbsp; RGB: rgb(105,207,249)</strong></span>      
-        </div>
-    <div class = "Grid4" id = "idGrid4">
-            <img src="Images/PISTACHIO.PNG" alt="Dental Clinic Dapitan" style = "width: 180px">
-            <span><hr class = ".typohr"><h3>Pistachio</h3><strong>#96C789 &nbsp; &nbsp; RGB: rgb(150,199,137)</strong></span> 
+  <header id="pageHeader">
+    <div class="containerHeader">
+      <div class = "logo"><!--animated logo gif file-->
+        <a href="home.html"><img src="Images/1x/CAREDENTALCLINICDAPITANDIPOLOG.gif" alt="Family Care Dental Clinci Design System" width="130"></a>
+      </div>
+      <h1 class = "title"><a href="home.html">Family Care Dental Clinic Pattern Library</a></h1>
     </div>
-    <div class = "Grid5" id = "idGrid5">
-            <img src="Images/SILVERCHALICE.jpg" alt="Dental Clinic Dapitan" style = "width: 180px">
-            <span><hr class = ".typohr"><h3>Silver Chalice</h3><strong>#B0B0B1 &nbsp; &nbsp; RGB: rgb(176,176,177)</strong></span>            
-    </div> 
-    <div class = "Grid6" id = "idGrid6"> 
-        <img src="Images/BLACK.png" alt="Dental Clinic Dapitan" style = "width: 180px">
-        <span><hr class = ".typohr"><h3>Black</h3><strong>#00000 &nbsp; &nbsp; RGB: rgb(0,0,0)</strong></span>
-    </div>
-    <div class = "Grid7" id = "idGrid7">
-            <img src="Images/WHITE.png" alt="Dental Clinic Dapitan" style = "width: 180px">
-            <span><hr class = ".typohr"><h3>White</h3><strong>#FFFFFF &nbsp; &nbsp; RGB: rgb(255,255,255)</strong></span>            
-    </div>
-    <div class = "Grid8" id = "idGrid8">
-            <img src="Images/SUCCESS.png" alt="Dental Clinic Dapitan" style = "width: 180px">
-            <span><hr class = ".typohr"><h3>Green</h3><strong>#00B050 &nbsp; &nbsp; RGB: rgb(0,176,80)</strong></span>            
-    </div>
-    <div class = "Grid9" id = "idGrid9">
-        <img src="Images/DANGER.png" alt="Dental Clinic Dapitan" style = "width: 180px">
-        <span><hr class = ".typohr"><h3>Red</h3><strong>#FF0000 &nbsp; &nbsp; RGB: rgb(255,0,0)</strong></span>            
-    </div>
-    <div class = "Grid10" id = "idGrid10">
-        <img src="Images/INFO.png" alt="Dental Clinic Dapitan" style = "width: 180px">
-        <span><hr class = ".typohr"><h3>Moonstone</h3><strong>#17A2B8 &nbsp; &nbsp; RGB: rgb(23,162,184)</strong></span>            
-</div>
-<div class = "Grid11" id = "idGrid11">
-        <img src="Images/WARNING.png" alt="Dental Clinic Dapitan" style = "width: 180px">
-        <span><hr class = ".typohr"><h3>Orange</h3><strong>#FFC000 &nbsp; &nbsp; RGB: rgb(255,192,0)</strong></span>            
-</div>
-<div class = "Grid12" id = "idGrid12">              
-</div>
-<div class = "Grid13" id = "idGrid13">
-
-    </div>
-</div>
-
-
-    </article>
-    <nav class="navMain" id="mainNav">
-        <div class = "Guides1"><h3>Style</h3>
+  </header>
+  <div id="spacer1"><hr class = "hr1"></div>   
+  <article id="mainArticle" class="classArticle">
+    <div class="containerStyle">
+    <details class = "articleTitle" style="font-weight:bold">
+        <summary>STYLE</summary>
         <ul style="list-style-type: none">
-        <li><a class = "list1" href="typeface.html">Typography</a></li>
-        <li><a class = "listColours" href="colours.html">Colours</a></li>
+            <li><a class = "list1" href="style.html">Typography</a></li>
+            <li><a class = "list1" href="colours.html">Colours</a></li>
+            <li><a class = "list1" href="spacing.html">Spacing</a></li>
+            <li><a class = "list1" href="images.html">Images</a></li>         
+        </ul></div>
+    </details> 
+    </div>        
+    <h2 class="articleTitle" id="Colours">Colours</h2> 
+    <hr>
+    <div class = "articleTitle colorcont">
+    <div class="articleTitle color">
+      <img src="Images/BABYBLUE.png" alt="Dental Clinic Dapitan" style = "width: 180px"><hr>
+      <span><h3>Baby Blue</h3><strong>#69CFF9<br>RGB(105,207,249)</strong></span> 
+    </div>
+    <div class="articleTitle color">
+      <img src="Images/POWDERBLUE.png" alt="Dental Clinic Dapitan" style = "width: 180px">
+      <span><hr class = ".typohr"><h3>Powder Blue</h3><strong>#B3DFDF<br>RGB(179,223,223)</strong></span> 
+    </div>
+    <div class="articleTitle color">
+      <img src="Images/YELLOWGREEN.png" alt="Dental Clinic Dapitan" style = "width: 180px"><hr>
+      <span><h3>Maximum Green Yellow</h3><strong>#CBE948<br>RGB(203,233,72)</strong></span> 
+    </div>
+    </div>
+    <div class = "articleTitle colorcont">
+        <div class="articleTitle color">
+          <img src="Images/PISTACHIO.PNG" alt="Dental Clinic Dapitan" style = "width: 180px"><hr>
+          <span><h3>Pistachio</h3><strong>#96C789<br>RGB(150,199,137)</strong></span> 
+        </div>
+        <div class="articleTitle color">
+          <img src="Images/WARNING.png" alt="Dental Clinic Dapitan" style = "width: 180px">
+          <span><hr class = ".typohr"><h3>Peach</h3><strong>#FAC898<br>RGB(250,200,152)</strong></span> 
+        </div>
+        <div class="articleTitle color">
+          <img src="Images/DANGER.png" alt="Dental Clinic Dapitan" style = "width: 180px"><hr>
+          <span><h3>Bittersweet</h3><strong>#FF6961<br>RGB(255,105,97)</strong></span> 
+        </div>
+        </div>
+    <details class = "articleTitle code" style="font-weight:bold">
+        <summary>HTML AND CSS Code</summary>
+    <h4>HTML CODE</h4>
+    <pre class="prettyprint">
+      <xmp>
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3>
+        <h4>This is heading 4</h4>
+        <p>This is a paragraph</p>
+      </xmp>  
+    </pre>
+    <h4>CSS CODE</h4>
+    <pre class="prettyprint">
+    <xmp>
+        h1, h2, h3, h4{
+        font-family: Helvetica,sans-serif;
+        }
+        article, nav, p{
+        font-family: Verdana, sans-serif;    
+        }
+        </xmp>  
+    </pre>
+    </details>
+    
+    <div class = "primaryfont">
+        <h3 class="articleTitle">Font Sizes</h3>        
+    </div>
+    <table class="articleTitle table">
+        <tr>
+            <th>Elements</th>
+            <th>Tag</th>
+            <th>Size</th>
+        </tr>
+        <tr>
+            <td><h1>This is heading 1</h1></td>
+            <td>h1</td>
+            <td>26px</td>
+        </tr>
+        <tr>
+            <td><h2>This is heading 2</h2></td>
+            <td>h2</td>
+            <td>24px</td>
+        </tr>
+        <tr>            
+            <td><h3>This is heading 3</h3></td>
+            <td>h3</td>
+            <td>18px</td>            
+        </tr>
+        <tr>
+            <td><h4>This is heading 4</h4></td>
+            <td>h4</td>
+            <td>16px</td>
+        </tr>
+        <tr>
+            <td><h5>This is heading 5</h5></td>
+            <td>h5</td>
+            <td>13px</td>
+        </tr>
+        <tr>
+            <td><h6>This is heading 6</h6></td>
+            <td>h6</td>
+            <td>10px</td>
+        </tr>
+        <tr>
+            <td>This is a paragraph</td>
+            <td>p</td>
+            <td>16px</td>
+        </tr>
+    </table>   
+    <details class = "articleTitle code" style="font-weight:bold">
+        <summary>HTML AND CSS Code</summary>
+        <h4>HTML CODE</h4>
+    <pre class="prettyprint">
+      <xmp>
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3>
+        <h4>This is heading 4</h4>
+        <h5>This is heading 5</h5>
+        <h6>This is heading 6</h6>
+        <p>This is a paragraph</p>
+      </xmp>  
+    </pre>    
+    </details> 
+  </article>
+  <nav class="navMain" id="mainNav">
+    <div class = "Guides1"><h3 style="color:#96C789;">Style</h3>
+      <ul style="list-style-type: none">
+        <li><a class = "list1" href="style.html">Typography</a></li>
+        <li><a class = "list1" href="colours.html">Colours</a></li>
         <li><a class = "list1" href="spacing.html">Spacing</a></li>
         <li><a class = "list1" href="images.html">Images</a></li>         
-     </ul></div>
-     <div class = "Guides1"><h3>Navigation</h3>
-        <ul style="list-style-type: none">
-        <li><a class = "list1" href="typeface.html">Navbar/Hamburger menu</a></li>
+      </ul></div>
+    <div class = "Guides1"><h3>Navigation</h3>
+      <ul style="list-style-type: none">
+        <li><a class = "list1" href="navigation.html">Hamburger menu</a></li>
         <li><a class = "list1" href="colours.html">Sub menu</a></li>
         <li><a class = "list1" href="spacing.html">Buttons</a></li>
         <li><a class = "list1" href="images.html">Breadcrumbs</a></li>         
-     </ul></div>
-     <div class = "Guides1"><h3>Form</h3>
+      </ul>
+    </div>
+    <div class = "Guides1"><h3>Form</h3>
       <ul style="list-style-type: none">
-      <li><a class = "list1" href="typeface.html">Fields with placeholder text</a></li>
-      <li><a class = "list1" href="colours.html">Labels</a></li>
-      <li><a class = "list1" href="spacing.html">Submit</a></li>        
-   </ul></div>
-   <div class = "Guides1"><h3>Components</h3>
-    <ul style="list-style-type: none">
-    <li><a class = "list1" href="typeface.html">Banner</a></li>
-    <li><a class = "list1" href="colours.html">Cards</a></li>
-    <li><a class = "list1" href="spacing.html">Carousel</a></li>
-    <li><a class = "list1" href="spacing.html">Modals</a></li> 
-    <li><a class = "list1" href="spacing.html">Spinners</a></li>
-    <li><a class = "list1" href="spacing.html">Tables</a></li>         
-  </ul></div>
-     <div class="dropdown">
-        <button class="dropbtn">Style</button>
-        <div class="dropdown-content">
-        <a href="typeface.html">Typography</a>
-        <a href="colours.html">Colours</a>
-        <a href="spacing.html">Spacing</a>
-        <a href="images.html">Images</a>
-        </div>
+        <li><a class = "list1" href="typography.html">Fields with placeholder text</a></li>
+        <li><a class = "list1" href="colours.html">Labels</a></li>
+        <li><a class = "list1" href="spacing.html">Submit</a></li>        
+      </ul>
+    </div>
+    <div class = "Guides1"><h3>Components</h3>
+      <ul style="list-style-type: none">
+        <li><a class = "list1" href="typography.html">Banner</a></li>
+        <li><a class = "list1" href="colours.html">Cards</a></li>
+        <li><a class = "list1" href="spacing.html">Carousel</a></li>
+        <li><a class = "list1" href="spacing.html">Modals</a></li> 
+        <li><a class = "list1" href="spacing.html">Spinners</a></li>
+        <li><a class = "list1" href="spacing.html">Tables</a></li>         
+      </ul>
+    </div>      
+  </nav>
+  <nav>
+    <section class="top-nav" id = "hamburger">
+      <div>
+        <a href="home.html"><img src="Images/LOGOTEETH.png" alt="Family Care Dental Clinci Design System" width="100"></a>
       </div>
-    </nav>
-    <footer class = "classFooter" id="idFooter">
-    
-    </footer>   
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
+        <li><a class = "list1" href="style.html">Style</a></li>
+        <li>Navigation</li>
+        <li>Form</li>
+        <li>Components</li>
+      </ul>
+    </section>
+    <hr class = "hr2">
+  </nav>     
 </body>
 </html>

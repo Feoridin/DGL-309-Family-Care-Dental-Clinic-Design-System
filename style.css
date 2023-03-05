@@ -6,36 +6,56 @@
     
 }
 .primaryfontregular, .primaryfontitalic, .primaryfontbold{
-    background-color: #96C789 ;
+    background-image:linear-gradient(to bottom,white,#96c789);
     margin: 1rem;
     font-family: Helvetica, sans-serif;
     padding-left: 1rem;
     border-radius: 0.5rem;
-    border: 1px solid #b0b0b1;
-    box-shadow: 2px 2px #b0b0b1;
+    border: 2px solid whitesmoke;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
 }
 .primaryfontregular2, .primaryfontitalic2, .primaryfontbold2{
-    background-color: #96C789 ;
-    margin: 1rem;
-    
+    background-image:linear-gradient(to bottom,white,#96c789);
+    margin: 1rem;    
     font-family: Verdana, sans-serif;
     padding-left: 1rem;
     border-radius: 0.5rem;
-    border: 1px solid #b0b0b1;
-    box-shadow: 2px 2px #b0b0b1;
+    border: 2px solid whitesmoke;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
 }
 .prettyprint{
     font-size:larger;
+    width:80%;
 }
 .articleTitle{
     margin-right:1rem;
 }
 .containerStyle{
     padding-top: 0.5rem;
-    font-size: large;
+    font-size: large;    
+}
+table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border-radius: 0.5rem;
     
 }
-
+.table{
+    margin-left: 2rem;
+    width:94%;
+}  
+td, th {
+    border: 1px solid #cbe948;
+    text-align: center;
+    padding: 8px;
+}  
+tr:nth-child(even) {
+    background-color: #96C789;
+}
+.code{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #cbe948
+}
 /* Stack the layout on small devices/viewports. */
 @media all and (max-width: 992px) {
 .primaryfontcontainer{
@@ -49,5 +69,8 @@
 }
 .articleTitle{
     margin-right:2rem;
+}
+.table{
+    width:90%;
 }
 }

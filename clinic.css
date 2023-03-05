@@ -58,7 +58,7 @@ a{
   color: black;
 }
 a:link {
-  color: #96C789;
+  color:black;
   background-color: transparent;
   text-decoration: none;
 }
@@ -113,6 +113,10 @@ a:active {
 .navMain{
     background-image: url("Images/background_dental_clinic.jpg");
     background-size: cover;
+    border-right: 3px solid #cbe948;
+    margin-top: -2px;
+    
+
 }
 .hr1{
     border-color:#cbe948;
@@ -151,6 +155,12 @@ p{
     padding-right: 1rem;
     padding-left: 1rem;
 }
+h1{
+    font-size: 26px;
+}
+h2{
+    font-size:24px;
+}
 /* Stack the layout on small devices/viewports. */
 @media all and (min-width: 992px) {
     .top-nav{
@@ -173,10 +183,8 @@ p{
       grid-template-rows: 10% 2% auto 1fr;  
       grid-template-columns: 1fr;
    }
-h1{
-    font-size: x-large;
-   }
 .title{
+    font-size: x-large;
     margin-top: 1.25rem;
     margin-left: -1rem;
    }
@@ -203,6 +211,7 @@ h1{
     visibility: hidden;
     margin-top: 0rem;
 }
+
 /*Hamburger Menu CSS*/
 .top-nav {
     display: flex;
