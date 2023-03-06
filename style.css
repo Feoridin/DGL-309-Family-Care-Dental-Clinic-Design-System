@@ -23,9 +23,8 @@
     border: 2px solid whitesmoke;
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
 }
-.prettyprint{
+pre.prettyprint{
     font-size:larger;
-    width:80%;
 }
 .articleTitle{
     margin-right:1rem;
@@ -43,6 +42,7 @@ table {
 .table{
     margin-left: 2rem;
     width:94%;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
 }  
 td, th {
     border: 1px solid #cbe948;

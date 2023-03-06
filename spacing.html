@@ -4,81 +4,257 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=html&amp;skin=sunburst"></script>
   <link rel="icon" href="images/TEETH.ico" type="image/x-icon">
   <link rel = "stylesheet" href="clinic.css"><!--css style link-->
-  <link rel = "stylesheet" href="clinictypeface.css"><!--css style link-->
+  <link rel = "stylesheet" href="style.css"><!--css style link-->
+  <link rel = "stylesheet" href="colours.css"><!--css style link-->
   <link rel = "stylesheet" href="spacing.css"><!--css style link-->
   <title>Family Care Dental Clinic Design System</title>
+  <!--Resources: https://youtu.be/1op-PqCGdIA - this link is to display code as code in a browser-->
+  <!--https://alvarotrigo.com/blog/hamburger-menu-css/ - this link is where the hamburger menu code got from-->
 </head>
 <body>
-    <header id="pageHeader">
-        <div class="containerHeader">
-            <div class = "logo"><!--animated logo gif file-->
-              <a href="home.html"><img src="Images/1x/CAREDENTALCLINICDAPITANDIPOLOG.gif" alt="Family Care Dental Clinci Design System" width="130"></a>
-            </div>
-            <h1 class = "title"><a href="home.html">Family Care Dental Clinic Pattern Library</a></h1>
-    </header>
-    <div id="spacer1"><hr class="hr1"></div>
-    <article id="mainArticle" class="classArticle">
-        <div class = "classArticleimageTypeface" ><img src="Images/jigsaw.png" alt="Dental Clinic Dapitan"></div>
-        <h2 class="articleTitleTypeface">Spacing</h2> 
-        <hr>
-    <div class = "spacingGrid">
-        <span><strong>Spacing</strong> is the negative area between elements and components. It is commonly controlled 
-            in code with margin and padding</span>
-        <h3>Spacing scale</h3>
-        <span>This are the scale applied and used within all the components.</span>
-        <br>
-        <br>
-        <img src="Images/spacing.png" alt="Family Dental Clinic" style="width:400px">
-        <br>
-        <img src="Images/spacing2.png" alt="Family Dental Clinic" style="width:600px">
-
-    </div>
-                 
-    </article>
-    <nav class="navMain" id="mainNav">
-        <div class = "Guides1"><h3>Style</h3>
-        <ul style="list-style-type: none">
-        <li><a class = "list1" href="typeface.html">Typography</a></li>
-        <li><a class = "list1" href="colours.html">Colours</a></li>
-        <li><a class = "listSpacing" href="spacing.html">Spacing</a></li>
-        <li><a class = "list1" href="images.html">Images</a></li>         
-     </ul></div>
-     <div class = "Guides1"><h3>Navigation</h3>
-      <ul style="list-style-type: none">
-      <li><a class = "list1" href="typeface.html">Navbar/Hamburger menu</a></li>
-      <li><a class = "list1" href="colours.html">Sub menu</a></li>
-      <li><a class = "list1" href="spacing.html">Buttons</a></li>
-      <li><a class = "list1" href="images.html">Breadcrumbs</a></li>         
-   </ul></div>
-   <div class = "Guides1"><h3>Form</h3>
-    <ul style="list-style-type: none">
-    <li><a class = "list1" href="typeface.html">Fields with placeholder text</a></li>
-    <li><a class = "list1" href="colours.html">Labels</a></li>
-    <li><a class = "list1" href="spacing.html">Submit</a></li>        
- </ul></div>
- <div class = "Guides1"><h3>Components</h3>
-  <ul style="list-style-type: none">
-  <li><a class = "list1" href="typeface.html">Banner</a></li>
-  <li><a class = "list1" href="colours.html">Cards</a></li>
-  <li><a class = "list1" href="spacing.html">Carousel</a></li>
-  <li><a class = "list1" href="spacing.html">Modals</a></li> 
-  <li><a class = "list1" href="spacing.html">Spinners</a></li>
-  <li><a class = "list1" href="spacing.html">Tables</a></li>         
-</ul></div>
-     <div class="dropdown">
-        <button class="dropbtn">Style</button>
-        <div class="dropdown-content">
-        <a href="typeface.html">Typography</a>
-        <a href="colours.html">Colours</a>
-        <a href="spacing.html">Spacing</a>
-        <a href="images.html">Images</a>
-        </div>
+  <header id="pageHeader">
+    <div class="containerHeader">
+      <div class = "logo"><!--animated logo gif file-->
+        <a href="home.html"><img src="Images/1x/CAREDENTALCLINICDAPITANDIPOLOG.gif" alt="Family Care Dental Clinci Design System" width="130"></a>
       </div>
-    </nav>
-    <footer id="idFooter">
-        
-    </footer>   
+      <h1 class = "title"><a href="home.html">Family Care Dental Clinic Pattern Library</a></h1>
+    </div>
+  </header>
+  <div id="spacer1"><hr class = "hr1"></div>   
+  <article id="mainArticle" class="classArticle">
+    <div class="containerStyle">
+    <details class = "articleTitle" style="font-weight:bold">
+        <summary>STYLE</summary>
+        <ul style="list-style-type: none">
+            <li><a class = "list1" href="style.html">Typography</a></li>
+            <li><a class = "list1" href="colours.html">Colours</a></li>
+            <li><a class = "list1" href="spacing.html">Spacing</a></li>
+            <li><a class = "list1" href="images.html">Images</a></li>         
+        </ul></div>
+    </details> 
+    </div>        
+    <h2 class="articleTitle" id="Colours">Spacing</h2> 
+    <hr>
+    <div class = "articleTitle spacingcont">
+    <span><strong>Spacing</strong> is the negative area between elements and components. It is controlled in code with margin 
+    and padding.</span>    
+    </div>
+    <h3 class="articleTitle">Spacing Scale</h3>
+    <div class="articleTitle containerBodyText">
+        <p>Use the spacing scale when building individual components. It includes small increments needed to create appropriate 
+        spatial relationships for detail-level designs.</p>
+        <table class="articleTitle table1">
+          <tr>
+            <th><strong>rem</strong></th>
+            <th><strong>px</strong></th>
+            <th><strong>Example</strong></th>
+          </tr>
+          <tr>
+            <td>0.125</td>
+            <td>2</td>
+            <td><div class="box"></div></td>
+          </tr>
+          <tr>
+            <td>0.25</td>
+            <td>4</td>
+            <td><div class="box box2"></div></td>
+          </tr>
+          <tr>
+            <td>0.5</td>
+            <td>8</td>
+            <td><div class="box box3"></div></td>
+          </tr>
+          <tr>
+            <td>0.75</td>
+            <td>12</td>
+            <td><div class="box box4"></div></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>16</td>
+            <td><div class="box box5"></div></td>
+          </tr>
+          <tr>
+            <td>1.5</td>
+            <td>24</td>
+            <td><div class="box box6"></div></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>32</td>
+            <td><div class="box box7"></div></td>
+          </tr>
+          <tr>
+            <td>2.5</td>
+            <td>40</td>
+            <td><div class="box box8"></div></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>48</td>
+            <td><div class="box box9"></div></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>64</td>
+            <td><div class="box box10"></div></td>
+          </tr>
+        </table>
+    <div class="labelcont">
+    <div class="boxcont">
+    <div class="box box7"></div>
+    <div class="box box11">2rem Spacing from top</div> 
+    </div>
+    <div class="label">Optional Label</div>  
+    <div class="boxcont">
+        <div class="box box5"></div>
+        <div class="box box12">1rem Spacing</div> 
+        </div>
+    <div class="label"><strong>Heading</strong></div> 
+    <div class="boxcont">
+        <div class="box box7"></div>
+        <div class="box box11">2rem Spacing</div> 
+        </div>
+    <div class="label">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur distinctio perferendis tempore fugiat
+        . Voluptatum odit doloremque veritatis debitis provident, eum laborum nostrum id quia. Quasi alias id similique excepturi illum.</div> 
+    <div class="boxcont">
+        <div class="box box5"></div>
+        <div class="box box12">1rem Spacing</div> 
+        </div>       
+    </div>
+    </div>
+    <details class = "articleTitle code" style="font-weight:bold">
+        <summary>HTML AND CSS Code</summary>
+        <h4>HTML CODE</h4>
+    <pre class="prettyprint">
+      <xmp>
+        <div class="labelcont">
+            <div class="boxcont">
+            <div class="box box7"></div>
+            <div class="box box11">2rem Spacing from top</div> 
+            </div>
+            <div class="label">Optional Label</div>  
+            <div class="boxcont">
+                <div class="box box5"></div>
+                <div class="box box12">1rem Spacing</div> 
+                </div>
+            <div class="label"><strong>Heading</strong></div> 
+            <div class="boxcont">
+                <div class="box box7"></div>
+                <div class="box box11">2rem Spacing</div> 
+                </div>
+            <div class="label">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur distinctio perferendis tempore fugiat
+                . Voluptatum odit doloremque veritatis debitis provident, eum laborum nostrum id quia. Quasi alias id similique excepturi illum.</div> 
+            <div class="boxcont">
+                <div class="box box5"></div>
+                <div class="box box12">1rem Spacing</div> 
+                </div>       
+            </div>
+            </div>
+      </xmp>  
+    </pre>
+    <h4>CSS CODE</h4>
+    <pre class="prettyprint">
+    <xmp>
+        .box5{
+            width:1rem;
+            height:1rem;
+        }
+        .box7{
+            width:2rem;
+            height:2rem;
+        }
+        .box11{
+            width:20rem;
+            height:2rem;
+            background-color:#69cff9;
+            font-size: smaller;
+            text-align: center;
+        }
+        .box12{
+            width:20rem;
+            height:1rem;
+            background-color:#69cff9;
+            font-size: smaller;
+            text-align: center;
+        }
+        .boxcont{
+            display:flex;
+            flex-direction: row;
+            margin-left:2rem;
+            margin-right:2rem;
+            margin-top:0;
+        }
+        .label{
+            margin-left: 2rem;
+        }
+        .labelcont{
+            margin-top:2rem;
+            padding:0;
+            background-color: white;
+            border: 1px solid whitesmoke;
+            box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+            margin-left:2rem;
+            width: 400px;    
+        }
+    </xmp>  
+    </pre>     
+    </details> 
+  </article>
+  <nav class="navMain" id="mainNav">
+    <div class = "Guides1"><h3 style="color:#b0b0b1;">Style</h3>
+      <ul style="list-style-type: none">
+        <li><a class = "list1" href="style.html">Typography</a></li>
+        <li><a class = "list1" href="colours.html">Colours</a></li>
+        <li><a class = "list1" href="spacing.html">Spacing</a></li>
+        <li><a class = "list1" href="images.html">Images</a></li>         
+      </ul></div>
+    <div class = "Guides1"><h3>Navigation</h3>
+      <ul style="list-style-type: none">
+        <li><a class = "list1" href="navigation.html">Hamburger menu</a></li>
+        <li><a class = "list1" href="colours.html">Sub menu</a></li>
+        <li><a class = "list1" href="spacing.html">Buttons</a></li>
+        <li><a class = "list1" href="images.html">Breadcrumbs</a></li>         
+      </ul>
+    </div>
+    <div class = "Guides1"><h3>Form</h3>
+      <ul style="list-style-type: none">
+        <li><a class = "list1" href="typography.html">Fields with placeholder text</a></li>
+        <li><a class = "list1" href="colours.html">Labels</a></li>
+        <li><a class = "list1" href="spacing.html">Submit</a></li>        
+      </ul>
+    </div>
+    <div class = "Guides1"><h3>Components</h3>
+      <ul style="list-style-type: none">
+        <li><a class = "list1" href="typography.html">Banner</a></li>
+        <li><a class = "list1" href="colours.html">Cards</a></li>
+        <li><a class = "list1" href="spacing.html">Carousel</a></li>
+        <li><a class = "list1" href="spacing.html">Modals</a></li> 
+        <li><a class = "list1" href="spacing.html">Spinners</a></li>
+        <li><a class = "list1" href="spacing.html">Tables</a></li>         
+      </ul>
+    </div>      
+  </nav>
+  <nav>
+    <section class="top-nav" id = "hamburger">
+      <div>
+        <a href="home.html"><img src="Images/LOGOTEETH.png" alt="Family Care Dental Clinci Design System" width="100"></a>
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
+        <li><a class = "list1" href="style.html">Style</a></li>
+        <li>Navigation</li>
+        <li>Form</li>
+        <li>Components</li>
+      </ul>
+    </section>
+    <hr class = "hr2">
+  </nav>     
 </body>
 </html>

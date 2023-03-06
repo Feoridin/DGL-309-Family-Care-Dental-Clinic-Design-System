@@ -111,12 +111,10 @@ a:active {
     background-color: #69cff9;
 }
 .navMain{
-    background-image: url("Images/background_dental_clinic.jpg");
+    background:radial-gradient(white,#69cff9);
     background-size: cover;
     border-right: 3px solid #cbe948;
-    margin-top: -2px;
-    
-
+    margin-top: -2px;   
 }
 .hr1{
     border-color:#cbe948;

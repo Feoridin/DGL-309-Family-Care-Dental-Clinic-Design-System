@@ -7,18 +7,126 @@
     border: 1px solid whitesmoke;
     padding: 1rem;
     box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
 }
 .color>img{
     padding: 0 1rem 0;
+}
+.containerBodyText{
+    border: 1px solid whitesmoke;
+    padding: 2rem 5rem 5rem;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+.Gray{
+    background:radial-gradient(white,#b0b0b1);
+}
+.linkgray:hover{
+    color:#69cff9;
+}
+.linkgray:active{
+    color:#b0b0b1;
+}
+.Blue{
+    background:radial-gradient(white,#69cff9);
+}
+.linkblue:hover{
+    color:#96c789;
+}
+.linkblue:active{
+    color:#b0b0b1;
+}
+.primaryButton{
+    background:radial-gradient(white,#69cff9);
+    color: black;
+    padding: 1rem 3rem;
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid #cbe948;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+    margin: 1rem;
+}
+.primaryButton:hover{
+    background:radial-gradient(#96c789,#69cff9);
+    color:black;
+}
+.primaryButton:active{
+    background:radial-gradient(white,#69cff9);
+    color:#b0b0b1;
+}
+.secondaryButton{
+    background:radial-gradient(white,#96c789);
+    color: black;
+    padding: 1rem 3rem;
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid #cbe948;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+    margin: 1rem;
+}
+.secondaryButton:hover{
+    background:radial-gradient(#69cff9,#96c789);
+    color:black;
+}
+.secondaryButton:active{
+    background:radial-gradient(white,#96c789);
+    color:#b0b0b1;
+}
+.warningButton{
+    background:radial-gradient(white,#fac898);
+    color: black;
+    padding: 1rem 3rem;
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid #cbe948;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+    margin: 1rem;
+}
+.warningButton:hover{
+    background:radial-gradient(#ff6961,#fac898);
+    color:black;
+}
+.warningButton:active{
+    background:radial-gradient(white,#fac898);
+    color:#b0b0b1;
+}
+.dangerButton{
+    background:radial-gradient(white,#ff6961);
+    color: black;
+    padding: 1rem 3rem;
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid #cbe948;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+    margin: 1rem;
+}
+.dangerButton:hover{
+    background:radial-gradient(#fac898,#ff6961);
+    color:black;
+}
+.dangerButton:active{
+    background:radial-gradient(white,#ff6961);
+    color:#b0b0b1;
+}
+.buttons{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 /* Stack the layout on small devices/viewports. */
 @media all and (max-width: 805px) {
     .colorcont{
         display:block;
-        margin: 0 10rem 0 10rem;
+        margin: 0 10rem 0 10rem;        
     }
-    .color{
-        width: 80%;
-        
+    .buttons{
+        display:block;
     }
+    
 }
