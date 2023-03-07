@@ -7,8 +7,15 @@
     border-style: ridge;
     border-color: #b0b0b9;
     border-width: .5rem;
-    box-shadow: .5rem 1rem #b0b0b1;    
+    box-shadow: .5rem 1rem #b0b0b1;      
 }
 .box{
     background-color: #b0b0b1;
+}
+.containerBodyText{
+    padding:0;
+}
+figure{
+    object-fit: cover;
+    padding: 0;
 }

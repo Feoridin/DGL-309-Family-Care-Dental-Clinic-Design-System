@@ -25,6 +25,8 @@
 }
 pre.prettyprint{
     font-size:larger;
+    width:80%;
+    overflow-x:scroll;
 }
 .articleTitle{
     margin-right:1rem;
@@ -54,7 +56,9 @@ tr:nth-child(even) {
 }
 .code{
     padding-bottom: 1rem;
-    border-bottom: 1px solid #cbe948
+    border-bottom: 1px solid #cbe948;
+    margin-right:2rem;
+    width:80%;
 }
 /* Stack the layout on small devices/viewports. */
 @media all and (max-width: 992px) {
@@ -73,4 +77,8 @@ tr:nth-child(even) {
 .table{
     width:90%;
 }
+.code{
+    width:200px;
+}
+
 }
