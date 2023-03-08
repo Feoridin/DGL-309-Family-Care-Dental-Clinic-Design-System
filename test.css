@@ -21,7 +21,7 @@ body{
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  margin: 0;
+  margin-top: 5rem;
   padding: 0;
 }
 
@@ -87,7 +87,7 @@ body{
   .menu-hamburger {
     position: absolute;
     top: 2rem;
-    margin-top: 50px;
+    margin-top: 5rem;
     left: 0;
     flex-direction: column;
     width: 100%;
@@ -119,4 +119,9 @@ body{
   .menu-hamburger > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
+}
+/*DROPDOWN BUTTON*/
+.menu-hamburger{
+  margin-top: 5rem;
+  z-index: 10;
 }
