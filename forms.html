@@ -13,6 +13,7 @@
   <link rel = "stylesheet" href="images.css"><!--css style link-->
   <link rel = "stylesheet" href="navigation.css"><!--css style link-->
   <link rel = "stylesheet" href="breadcrumbs.css"><!--css style link-->
+  <link rel = "stylesheet" href="forms.css"><!--css style link-->
   <title>Family Care Dental Clinic Design System</title>
   <!--Resources: https://youtu.be/1op-PqCGdIA - this link is to display code as code in a browser-->
   <!--https://alvarotrigo.com/blog/hamburger-menu-css/ - this link is where the hamburger menu code got from-->
@@ -43,47 +44,238 @@
     <div class = "articleTitle spacingcont">
     <h4>Fields with placeholder text</h4>    
     </div>
-    
+
+    <div class="containerForm containerForm1">
+        <form method="post" action="https://learndigital.dev/programs/dgl103-form.php"><!--<form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.-->
+            <label for="fname">Labels</label><!-- <label> tag defines a label for several elements-->
+            <input type="text" id="fname" name="firstname" placeholder="Ex: John"><!-- defines a single-line text field-->
+        </form>
+    </div>
+    <h4 class="articleTitle">Labels</h4>
+    <div class="containerForm containerForm1">
+        <form method="post" action="https://learndigital.dev/programs/dgl103-form.php"><!--<form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.-->
+            <label for="number">Contact Number <span class="label-required">* (required)</span></label>
+            <input type="number" id="number" name="number" placeholder="+63 912 345 6789" required>
+                    
+            <fieldset><!-- <fieldset> tag is used to group related elements in a form and draws a box around the related elements-->
+                <legend>Type of Message</legend><!--caption for the fieldset-->
+                <input type="radio" id="01" name="message" value="feedback">
+                <label for="01">Feedback</label><br>
+                <input type="radio" id="02" name="message" value="inquiry">
+                <label for="02">Inquiry</label><br>                
+              </fieldset>
+        
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Please tell us your inquiry/feedback..." style="height:200px"></textarea><!--textarea tag defines a multi-line text input control(Textbox)-->
+        </form>
+    </div>
+    <h4 class="articleTitle">Submit and Reset Button</h4>
+    <div class="containerForm containerForm1">
+        <div class="wrapper-button"><!--Reset and Submit Buttons-->
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </div>
+    </div>
+    <h4 class="articleTitle">Sample Form</h4>
+    <div class="containerForm">
+    <h2>Contact Us</h2>
+          <p>Consult with our team online by filling out the form below. If you have specific inquiries regarding our services, please don't hesitate to get in touch. We will respond as soon as possible.</p>
+          <form method="post" action="https://learndigital.dev/programs/dgl103-form.php"><!--<form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.-->
+            <label for="fname">First Name</label><!-- <label> tag defines a label for several elements-->
+            <input type="text" id="fname" name="firstname" placeholder="Ex: John"><!-- defines a single-line text field-->
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Ex: Doe">
+        
+            <label for="email">Email <span class="label-required">* (required)</span></label>
+            <input type="email" id="email" name="email" placeholder="Ex: johndoe@yahoo.com" required>
+
+            <label for="number">Contact Number <span class="label-required">* (required)</span></label>
+            <input type="number" id="number" name="number" placeholder="+63 912 345 6789" required>
+                    
+            <fieldset><!-- <fieldset> tag is used to group related elements in a form and draws a box around the related elements-->
+                <legend>Type of Message</legend><!--caption for the fieldset-->
+                <input type="radio" id="01" name="message" value="feedback">
+                <label for="01">Feedback</label><br>
+                <input type="radio" id="02" name="message" value="inquiry">
+                <label for="02">Inquiry</label><br>                
+              </fieldset>
+        
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Please tell us your inquiry/feedback..." style="height:200px"></textarea><!--textarea tag defines a multi-line text input control(Textbox)-->
+        
+            <div class="wrapper-button"><!--Reset and Submit Buttons-->
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        </div>
+        </div>
+        </div>
     <details class = "code" style="font-weight:bold">
       <summary>HTML AND CSS Code</summary>
         <h4>HTML CODE</h4>
         <pre class="prettyprint">
           <xmp>
-            <ul class="breadcrumb">
-                <li><div class="breadcrumbText"><a href="#">Home</a></div></li>
-                <li><div class="breadcrumbText"><a href="#">Link1</a></div></li>
-                <li><div class="breadcrumbText"><a href="#">Link2</a></div></li>
-                <li><div class="breadcrumbText bText">Link3</div></li>
-              </ul>
-              <hr class="hr4">
+            <div class="containerForm">
+                <h2>Contact Us</h2>
+                      <p>Consult with our team online by filling out the form below. If you have specific inquiries regarding our services, please don't hesitate to get in touch. We will respond as soon as possible.</p>
+                      <form method="post" action="https://learndigital.dev/programs/dgl103-form.php"><!--<form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.-->
+                        <label for="fname">First Name</label><!-- <label> tag defines a label for several elements-->
+                        <input type="text" id="fname" name="firstname" placeholder="Ex: John"><!-- defines a single-line text field-->
+                    
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Ex: Doe">
+                    
+                        <label for="email">Email <span class="label-required">* (required)</span></label>
+                        <input type="email" id="email" name="email" placeholder="Ex: johndoe@yahoo.com" required>
+            
+                        <label for="number">Contact Number <span class="label-required">* (required)</span></label>
+                        <input type="number" id="number" name="number" placeholder="+63 912 345 6789" required>
+                                
+                        <fieldset><!-- <fieldset> tag is used to group related elements in a form and draws a box around the related elements-->
+                            <legend>Type of Message</legend><!--caption for the fieldset-->
+                            <input type="radio" id="01" name="message" value="feedback">
+                            <label for="01">Feedback</label><br>
+                            <input type="radio" id="02" name="message" value="inquiry">
+                            <label for="02">Inquiry</label><br>                
+                          </fieldset>
+                    
+                          <label for="message">Message</label>
+                          <textarea id="message" name="message" placeholder="Please tell us your inquiry/feedback..." style="height:200px"></textarea><!--textarea tag defines a multi-line text input control(Textbox)-->
+                    
+                        <div class="wrapper-button"><!--Reset and Submit Buttons-->
+                            <input type="reset" value="Reset">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                    </div>
           </xmp>  
         </pre>
         <h4>CSS CODE</h4>
         <pre class="prettyprint">
           <xmp>
-            .breadcrumb{
-                list-style: none;
-                display:flex;
-                flex-direction: row;
+            input[type="reset"] {
+                background:radial-gradient(white,#fac898);
+                color: black;
+                padding: 1rem 3rem;
+                font-size: large;
+                font-weight: bold;
+                border: 1px solid #cbe948;
+                border-radius: 0.5rem;
+                box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+                margin: 1rem;
+                cursor: pointer;
+              }
+              
+              input[type="reset"]:hover {
+                background:radial-gradient(#ff6961,#fac898);
+                color:black;
+              }
+              input[type="reset"]:active{
+                background:radial-gradient(white,#fac898);
+                color:#b0b0b1;
             }
-            .breadcrumbText{
-                width:5rem;
-                transform: skew(-20deg);
-                background-color: #96c789;
-                text-align: center;
-                margin-left:-0.85rem;   
-                padding: .5rem 0.5rem .5rem 0.5rem;
-                border-left:1px solid #b0b0b1;
-                border-right:1px solid #b0b0b1;
+              input[type="submit"] {
+                background:radial-gradient(white,#69cff9);
+                color: black;
+                padding: 1rem 3rem;
+                font-size: large;
+                font-weight: bold;
+                border: 1px solid #cbe948;
+                border-radius: 0.5rem;
+                box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+                margin: 1rem;
+                cursor: pointer;
+              }
+              
+              input[type="submit"]:hover {
+                background:radial-gradient(#96c789,#69cff9);
+                color:black;;
+              }
+              input[type="submit"]:active{
+                background:radial-gradient(white,#69cff9);
+                color:#b0b0b1;
             }
-            .bText{
-                background-color: white;
-                border: 1px solid #b0b0b1;
-            }
-            .hr4{
-                margin-top:-1.5rem;
-                border: 4px ridge #cbe948;
-            }
+              
+              /* ===============
+                 STRUCTURE
+                 =============== */
+              
+              .wrapper-form {
+               
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 0px 20px;
+                max-width: 600px;
+                margin: 0 50px 0px 20px;
+              }
+              
+              .wrapper-button {
+                display: flex;
+                justify-content: space-between;
+              }
+              
+              /* ===============
+                 FORM CONTROLS
+                 =============== */
+              
+              input,
+              select,
+              textarea {
+                font-size:medium;
+                font-weight: bold;
+              }
+              
+              input[type="text"],
+              select,
+              textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #cbe948;
+                border-radius: 4px;
+                margin-top: 0.5rem;
+                margin-bottom: 16px;
+                resize: vertical;
+              }
+              
+              input[type="email"] {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #cbe948;
+                border-radius: 4px;
+                margin-top: 0.5rem;
+                margin-bottom: 16px;
+                resize: vertical;
+              }
+              input[type="number"] {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #cbe948;
+                border-radius: 4px;
+                margin-top: 0.5rem;
+                margin-bottom: 16px;
+                resize: vertical;
+              }
+              fieldset {
+                margin-bottom: 16px;
+                border: 1px solid #cbe948;
+              }
+              
+              .label-required {
+                font-size: 0.8rem;
+                color: #ff6961;
+              }
+              .containerForm{
+                background-color:#96c789;
+                padding:2rem 4rem 2rem 2rem;
+                margin:0 2rem 0;
+                border-radius:1rem;
+                box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+              }
+              .containerForm1{
+                margin-bottom:2rem;
+              }
           </xmp>  
         </pre>     
     </details>
