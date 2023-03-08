@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=html&amp;skin=sunburst"></script>
+  <link rel="icon" href="images/TEETH.ico" type="image/x-icon">
+  <link rel = "stylesheet" href="clinic.css"><!--css style link-->
+  <link rel = "stylesheet" href="style.css"><!--css style link-->
+  <link rel = "stylesheet" href="colours.css"><!--css style link-->
+  <link rel = "stylesheet" href="spacing.css"><!--css style link-->
+  <link rel = "stylesheet" href="images.css"><!--css style link-->
+  <link rel = "stylesheet" href="navigation.css"><!--css style link-->
+  <title>Family Care Dental Clinic Design System</title>
+  <!--Resources: https://youtu.be/1op-PqCGdIA - this link is to display code as code in a browser-->
+  <!--https://alvarotrigo.com/blog/hamburger-menu-css/ - this link is where the hamburger menu code got from-->
+</head>
+<body>
+  <header id="pageHeader">
+    <div class="containerHeader">
+      <div class = "logo"><!--animated logo gif file-->
+        <a href="home.html"><img src="Images/1x/CAREDENTALCLINICDAPITANDIPOLOG.gif" alt="Family Care Dental Clinci Design System" width="130"></a>
+      </div>
+      <h1 class = "title"><a href="home.html">Family Care Dental Clinic Pattern Library</a></h1>
+    </div>
+  </header>
+  <div id="spacer1"><hr class = "hr1"></div>   
+  <article id="mainArticle" class="classArticle">
+    <div class="containerStyle">
+    <details class = "articleTitle" style="font-weight:bold">
+        <summary>NAVIGATION</summary>
+        <ul style="list-style-type: none">
+            <li><a class = "list1" href="navigation.html">Hamburger Menu</a></li>
+            <li><a class = "list1" href="colours.html">Sub menu</a></li>
+            <li><a class = "list1" href="spacing.html">Buttons</a></li>
+            <li><a class = "list1" href="images.html">Breadcrumbs</a></li>         
+        </ul></div>
+    </details> 
+    </div>        
+    <h2 class="articleTitle" id="Colours">Hamburger menu</h2> 
+    <hr>
+    <div class = "articleTitle spacingcont">
+    <span>The hamburger menu is a responsive pattern that displays a horizontal navigation menu for pages related to webpage.
+        This navigation menu is required on all top-level pages and must use the primary palette colour.
+    </span>    
+    </div>
+    <div class="containerhamburger">
+        <section class="top-nav-hamburger">
+          <div class="logohamburger">
+            <a class = "list1" href="#">Logo Here</a>
+          </div>
+          <input id="menu-toggle-hamburger" type="checkbox" />
+          <label class='menu-button-container-hamburger' for="menu-toggle-hamburger">
+          <div class='menu-button-hamburger'></div>
+        </label>
+          <ul class="menu-hamburger">
+            <li><a class = "list1" href="#">Link1</a></li>
+            <li><a class = "list1" href="#">Link2</a></li>
+            <li><a class = "list1" href="#">Link3</a></li>
+            <li><a class = "list1" href="#">Link4</a></li>
+            <li><a class = "list1" href="#">Link5</a></li>
+          </ul>
+        </section>  
+    </div> 
+    <h3 class="containerResolution">@700px Resolution:</h3>
+    
+        <div class="containerhamburger2">
+            <section class="top-nav-hamburger2">
+              <div>
+                <a class = "list1" href="#">Logo Here</a>
+              </div>
+              <input id="menu-toggle-hamburger2" type="checkbox" />
+              <label class='menu-button-container-hamburger2' for="menu-toggle-hamburger2">
+              <div class='menu-button-hamburger2'></div>
+            </label>
+              <ul class="menu-hamburger2">
+                <li><a class = "list1" href="#">Link1</a></li>
+                <li><a class = "list1" href="#">Link2</a></li>
+                <li><a class = "list1" href="#">Link3</a></li>
+                <li><a class = "list1" href="#">Link4</a></li>
+                <li><a class = "list1" href="#">Link5</a></li>
+              </ul>
+            </section>  
+        </div>
+        <details class = "code" style="font-weight:bold">
+            <summary>HTML AND CSS Code</summary>
+            <h4>HTML CODE</h4>
+        <pre class="prettyprint">
+          <xmp>
+            <div class="containerhamburger">
+                <section class="top-nav-hamburger">
+                  <div class="logohamburger">
+                    <a class = "list1" href="#">Logo Here</a>
+                  </div>
+                  <input id="menu-toggle-hamburger" type="checkbox" />
+                  <label class='menu-button-container-hamburger' for="menu-toggle-hamburger">
+                  <div class='menu-button-hamburger'></div>
+                </label>
+                  <ul class="menu-hamburger">
+                    <li><a class = "list1" href="#">Link1</a></li>
+                    <li><a class = "list1" href="#">Link2</a></li>
+                    <li><a class = "list1" href="#">Link3</a></li>
+                    <li><a class = "list1" href="#">Link4</a></li>
+                    <li><a class = "list1" href="#">Link5</a></li>
+                  </ul>
+                </section>  
+            </div>
+          </xmp>  
+        </pre>
+        <h4>CSS CODE</h4>
+        <pre class="prettyprint">
+        <xmp>
+            body{
+                margin:0;
+              }
+              .containerhamburger {
+                box-sizing: border-box;
+              }
+              
+              .top-nav-hamburger {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                background-color: black;
+                background:radial-gradient(white,#69cff9);
+                color: black;
+                height: 50px;
+                padding: 1em;
+              }
+              
+              .menu-hamburger {
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+              }
+              
+              .menu-hamburger > li {
+                margin: 0 1rem;
+                overflow: hidden;
+              }
+              
+              .menu-button-container-hamburger {
+                display: none;
+                height: 100%;
+                width: 30px;
+                cursor: pointer;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+              }
+              
+              #menu-toggle-hamburger {
+                display: none;
+              }
+              
+              .menu-button-hamburger,
+              .menu-button-hamburger::before,
+              .menu-button-hamburger::after {
+                display: block;
+                background-color: black;
+                position: absolute;
+                height: 4px;
+                width: 30px;
+                transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+                border-radius: 2px;
+              }
+              
+              .menu-button-hamburger::before {
+                content: '';
+                margin-top: -8px;
+              }
+              
+              .menu-button-hamburger::after {
+                content: '';
+                margin-top: 8px;
+              }
+              
+              #menu-toggle-hamburger:checked + .menu-button-container-hamburger .menu-button-hamburger::before {
+                margin-top: 0px;
+                transform: rotate(405deg);
+              }
+              
+              #menu-toggle-hamburger:checked + .menu-button-container-hamburger .menu-button-hamburger {
+                background: rgba(255, 255, 255, 0);
+              }
+              
+              #menu-toggle-hamburger:checked + .menu-button-container-hamburger .menu-button-hamburger::after {
+                margin-top: 0px;
+                transform: rotate(-405deg);
+              }
+              @media (max-width: 700px) {
+                .menu-button-container-hamburger {
+                  display: flex;
+                }
+                .menu-hamburger {
+                  position: absolute;
+                  top: 21rem;
+                  margin-top: 50px;
+                  left: 0;
+                  flex-direction: column;
+                  width: 100%;
+                  justify-content: center;
+                  align-items: center;
+                }
+                #menu-toggle-hamburger ~ .menu-hamburger li {
+                  height: 0;
+                  margin: 0;
+                  padding: 0;
+                  border: 0;
+                  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+                }
+                #menu-toggle-hamburger:checked ~ .menu-hamburger li {
+                  border: 1px solid #cbe948;
+                  height: 2.5em;
+                  padding: 0.5em;
+                  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+                }
+                .menu-hamburger > li {
+                  display: flex;
+                  justify-content: center;
+                  margin: 0;
+                  padding: 0.5em 0;
+                  width: 100%;
+                  color: black;
+                  background:radial-gradient(white,#96c789);
+                }
+                .menu-hamburger > li:not(:last-child) {
+                  border-bottom: 1px solid #444;
+                }
+              }
+              .logohamburger{
+                visibility: hidden;
+              }
+              .containerhamburger2{
+                margin-top:1rem;
+              }
+              .containerResolution{
+                margin: 2rem;
+              }
+        </xmp>  
+        </pre>     
+        </details>
+  </article>
+  <nav class="navMain" id="mainNav">
+    <div class = "Guides1"><h3 style="color:#b0b0b1;">Style</h3>
+      <ul style="list-style-type: none">
+        <li><a class = "list1" href="style.html">Typography</a></li>
+        <li><a class = "list1" href="colours.html">Colours</a></li>
+        <li><a class = "list1" href="spacing.html">Spacing</a></li>
+        <li><a class = "list2" href="images.html" >Images</a></li>         
+      </ul></div>
+    <div class = "Guides1"><h3>Navigation</h3>
+      <ul style="list-style-type: none">
+        <li><a class = "list1" href="navigation.html">Hamburger menu</a></li>
+        <li><a class = "list1" href="colours.html">Sub menu</a></li>
+        <li><a class = "list1" href="spacing.html">Buttons</a></li>
+        <li><a class = "list1" href="images.html">Breadcrumbs</a></li>         
+      </ul>
+    </div>
+    <div class = "Guides1"><h3>Form</h3>
+      <ul style="list-style-type: none">
+        <li><a class = "list1" href="typography.html">Fields with placeholder text</a></li>
+        <li><a class = "list1" href="colours.html">Labels</a></li>
+        <li><a class = "list1" href="spacing.html">Submit</a></li>        
+      </ul>
+    </div>
+    <div class = "Guides1"><h3>Components</h3>
+      <ul style="list-style-type: none">
+        <li><a class = "list1" href="typography.html">Banner</a></li>
+        <li><a class = "list1" href="colours.html">Cards</a></li>
+        <li><a class = "list1" href="spacing.html">Carousel</a></li>
+        <li><a class = "list1" href="spacing.html">Modals</a></li> 
+        <li><a class = "list1" href="spacing.html">Spinners</a></li>
+        <li><a class = "list1" href="spacing.html">Tables</a></li>         
+      </ul>
+    </div>      
+  </nav>
+  <nav>
+    <section class="top-nav" id = "hamburger">
+      <div>
+        <a href="home.html"><img src="Images/LOGOTEETH.png" alt="Family Care Dental Clinci Design System" width="100"></a>
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
+        <li><a class = "list1" href="style.html">Style</a></li>
+        <li>Navigation</li>
+        <li>Form</li>
+        <li>Components</li>
+      </ul>
+    </section>
+    <hr class = "hr2">
+  </nav>     
+</body>
+</html>

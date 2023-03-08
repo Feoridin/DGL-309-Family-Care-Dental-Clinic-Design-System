@@ -1,31 +1,23 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-h2 {
-  vertical-align: center;
-  text-align: center;
+body{
+  margin:0;
 }
-
-html, body {
-  margin: 0;
-  height: 100%;
-}
-
-* {
-  font-family: "Raleway";
+.containerhamburger {
   box-sizing: border-box;
 }
 
-.top-nav {
+.top-nav-hamburger {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-image: url("Images/background_dental_clinic.jpg");
-  background-size: cover;
+  background-color: #00BAF0;
+  background: linear-gradient(to left, #f46b45, #eea849);
+  color: #FFF;
   height: 50px;
   padding: 1em;
 }
 
-.menu {
+.menu-hamburger {
   display: flex;
   flex-direction: row;
   list-style-type: none;
@@ -33,12 +25,12 @@ html, body {
   padding: 0;
 }
 
-.menu > li {
+.menu-hamburger > li {
   margin: 0 1rem;
   overflow: hidden;
 }
 
-.menu-button-container {
+.menu-button-container-hamburger {
   display: none;
   height: 100%;
   width: 30px;
@@ -48,15 +40,15 @@ html, body {
   align-items: center;
 }
 
-#menu-toggle {
+#menu-toggle-hamburger {
   display: none;
 }
 
-.menu-button,
-.menu-button::before,
-.menu-button::after {
+.menu-button-hamburger,
+.menu-button-hamburger::before,
+.menu-button-hamburger::after {
   display: block;
-  background-color: black;
+  background-color: #fff;
   position: absolute;
   height: 4px;
   width: 30px;
@@ -64,37 +56,37 @@ html, body {
   border-radius: 2px;
 }
 
-.menu-button::before {
+.menu-button-hamburger::before {
   content: '';
   margin-top: -8px;
 }
 
-.menu-button::after {
+.menu-button-hamburger::after {
   content: '';
   margin-top: 8px;
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button::before {
+#menu-toggle-hamburger:checked + .menu-button-container-hamburger .menu-button-hamburger::before {
   margin-top: 0px;
   transform: rotate(405deg);
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button {
+#menu-toggle-hamburger:checked + .menu-button-container-hamburger .menu-button-hamburger {
   background: rgba(255, 255, 255, 0);
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button::after {
+#menu-toggle-hamburger:checked + .menu-button-container-hamburger .menu-button-hamburger::after {
   margin-top: 0px;
   transform: rotate(-405deg);
 }
 
 @media (max-width: 700px) {
-  .menu-button-container {
+  .menu-button-container-hamburger {
     display: flex;
   }
-  .menu {
+  .menu-hamburger {
     position: absolute;
-    top: 0;
+    top: 2rem;
     margin-top: 50px;
     left: 0;
     flex-direction: column;
@@ -102,20 +94,20 @@ html, body {
     justify-content: center;
     align-items: center;
   }
-  #menu-toggle ~ .menu li {
+  #menu-toggle-hamburger ~ .menu-hamburger li {
     height: 0;
     margin: 0;
     padding: 0;
     border: 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
-  #menu-toggle:checked ~ .menu li {
+  #menu-toggle-hamburger:checked ~ .menu-hamburger li {
     border: 1px solid #333;
     height: 2.5em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
-  .menu > li {
+  .menu-hamburger > li {
     display: flex;
     justify-content: center;
     margin: 0;
@@ -124,51 +116,7 @@ html, body {
     color: white;
     background-color: #222;
   }
-  .menu > li:not(:last-child) {
+  .menu-hamburger > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
 }
-
- /*dropdown menu 
-  
-  */
-  .dropbtn1 {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropdown1 {
-    position: relative;
-    display: inline-block;
-    
-  }
-  
-  .dropdown1-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown1-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .dropdown1-content a:hover {background-color: #f1f1f1}
-  
-  .dropdown1:hover .dropdown1-content {
-    display: block;
-  }
-  
-  .dropdown1:hover .dropbtn1 {
-    background-color: #3e8e41;
-  }
-

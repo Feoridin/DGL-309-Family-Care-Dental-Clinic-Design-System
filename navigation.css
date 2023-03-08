@@ -1,0 +1,266 @@
+body{
+    margin:0;
+  }
+  .containerhamburger {
+    box-sizing: border-box;
+  }
+  
+  .top-nav-hamburger {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    background:radial-gradient(white,#69cff9);
+    color: black;
+    height: 50px;
+    padding: 1em;
+  }
+  
+  .menu-hamburger {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-hamburger > li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+  
+  .menu-button-container-hamburger {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle-hamburger {
+    display: none;
+  }
+  
+  .menu-button-hamburger,
+  .menu-button-hamburger::before,
+  .menu-button-hamburger::after {
+    display: block;
+    background-color: black;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button-hamburger::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button-hamburger::after {
+    content: '';
+    margin-top: 8px;
+  }
+  
+  #menu-toggle-hamburger:checked + .menu-button-container-hamburger .menu-button-hamburger::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle-hamburger:checked + .menu-button-container-hamburger .menu-button-hamburger {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle-hamburger:checked + .menu-button-container-hamburger .menu-button-hamburger::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+  .code{
+    margin-top:2rem;
+  }
+
+  .containerhamburger2 {
+    box-sizing: border-box;
+    width:50%;
+  }
+  
+  .top-nav-hamburger2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    background:radial-gradient(white,#69cff9);
+    color: black;
+    height: 50px;
+    padding: 1em;
+  }
+  
+  .menu-hamburger2 {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-hamburger2 > li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+  
+  .menu-button-container-hamburger2 {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle-hamburger2 {
+    display: none;
+  }
+  
+  .menu-button-hamburger2,
+  .menu-button-hamburger2::before,
+  .menu-button-hamburger2::after {
+    display: block;
+    background-color: black;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button-hamburger2::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button-hamburger2::after {
+    content: '';
+    margin-top: 8px;
+  }
+  
+  #menu-toggle-hamburger2:checked + .menu-button-container-hamburger2 .menu-button-hamburger2::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle-hamburger2:checked + .menu-button-container-hamburger2 .menu-button-hamburger2 {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle-hamburger2:checked + .menu-button-container-hamburger2 .menu-button-hamburger2::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  } 
+  @media (max-width: 700px) {
+    .menu-button-container-hamburger {
+      display: flex;
+    }
+    .menu-hamburger {
+      position: absolute;
+      top: 21rem;
+      margin-top: 50px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle-hamburger ~ .menu-hamburger li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle-hamburger:checked ~ .menu-hamburger li {
+      border: 1px solid #cbe948;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu-hamburger > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: black;
+      background:radial-gradient(white,#96c789);
+    }
+    .menu-hamburger > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+    }
+  }
+  .logohamburger{
+    visibility: hidden;
+  }
+  .containerhamburger2{
+    margin-top:1rem;
+  }
+  .containerResolution{
+    margin: 2rem;
+  }
+  @media (max-width: 1550px) { 
+    .containerhamburger2{
+        visibility: hidden;
+    }
+    .containerResolution{ 
+        visibility: hidden;
+    }
+  }
+  @media (max-width: 700px) {
+    .logohamburger{
+        visibility: visible;
+      }  
+  }
+  @media (min-width: 700px) {
+      .menu-button-container-hamburger2 {
+        display: flex;
+      }
+      .menu-hamburger2 {
+        position:fixed;
+        top: 28rem;
+        margin-top: 50px;
+        left: 17.7rem;
+        flex-direction: column;
+        width: 700px;
+        justify-content: center;
+        align-items: start;
+      }
+      #menu-toggle-hamburger2 ~ .menu-hamburger2 li {
+        height: 0;
+        margin: 0 0 0 5rem;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      #menu-toggle-hamburger2:checked ~ .menu-hamburger2 li {
+        border: 1px solid #cbe948;
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      .menu-hamburger2 > li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 713px;
+        color: black;
+        background:radial-gradient(white,#96c789);
+      }
+      .menu-hamburger2 > li:not(:last-child) {
+        border-bottom: 1px solid #444;
+      }
+  }

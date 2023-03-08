@@ -216,7 +216,7 @@ h2{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-image: url("Images/background_dental_clinic.jpg");
+    background:radial-gradient(white,#69cff9);
     background-size: cover;
     height: 50px;
     padding: 1em;
