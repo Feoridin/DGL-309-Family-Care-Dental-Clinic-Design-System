@@ -19,6 +19,8 @@
     border-radius: 0.5rem;
     margin-right: 2rem;
     margin-left: 2rem;
+    margin-top:1rem;
+    margin-bottom: 1rem;
 }
 .Gray{
     background:radial-gradient(white,#b0b0b1);
@@ -37,6 +39,11 @@
 }
 .linkblue:active{
     color:#b0b0b1;
+}
+.linkwhite2{
+    font-style: italic;
+    color:#b3dfdf;
+    text-decoration: underline;
 }
 .primaryButton{
     background:radial-gradient(white,#69cff9);

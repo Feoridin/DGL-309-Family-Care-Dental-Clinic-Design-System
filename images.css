@@ -13,9 +13,60 @@
     background-color: #b0b0b1;
 }
 .containerBodyText{
-    padding:0;
+    padding:0 0 2rem 0;
+    margin-bottom: 2rem;
 }
 figure{
     object-fit: cover;
-    padding: 0;
+    padding: 10rem;
+}
+.containerImage{
+    width:360px;
+    height:240px;
+    background:radial-gradient(white,#96c789);
+    margin:2rem;
+    border-radius: 1rem;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+}
+.containerImage2{
+    width:500px;
+    height:500px;
+    background:radial-gradient(white,#96c789);
+    margin:2rem 0;
+    border-radius: 1rem;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+}
+.font2{
+    padding:0 0 0 2rem;
+}
+
+.image1{
+    width:750px;
+    height:500px;
+    margin:2rem;
+    border-radius: 1rem;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25); 
+}
+.image1:hover{
+    border: 2px solid #cbe948;
+    border-radius: 1rem;
+}
+.image1:active{
+    border: 5px solid #cbe948;
+    border-radius: 1rem;
+}
+.list2{
+    text-decoration: underline;
+    font-style: italic;
+    
+}
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 992px) {
+    .containerBodyText{
+        width:90%;
+        margin-right:2rem;
+    }
+    .image1{
+        width:auto;
+    }
 }

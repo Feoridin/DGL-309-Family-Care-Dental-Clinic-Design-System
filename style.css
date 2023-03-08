@@ -25,7 +25,6 @@
 }
 pre.prettyprint{
     font-size:larger;
-    width:80%;
     overflow-x:scroll;
 }
 .articleTitle{
@@ -38,8 +37,7 @@ pre.prettyprint{
 table {
     font-family: Verdana, sans-serif;
     border-collapse: collapse;
-    border-radius: 0.5rem;
-    
+    border-radius: 0.5rem;    
 }
 .table{
     margin-left: 2rem;
@@ -57,8 +55,8 @@ tr:nth-child(even) {
 .code{
     padding-bottom: 1rem;
     border-bottom: 1px solid #cbe948;
-    margin-right:2rem;
-    width:80%;
+    margin-right:0;
+    margin-left:2rem;
 }
 /* Stack the layout on small devices/viewports. */
 @media all and (max-width: 992px) {
@@ -76,9 +74,15 @@ tr:nth-child(even) {
 }
 .table{
     width:90%;
+    margin-right:2rem;
+}
+.prettyprint{
+    margin-right:2rem;
+    overflow-x:scroll;
 }
 .code{
-    width:200px;
+    width:auto;
+}
 }
 
-}
+

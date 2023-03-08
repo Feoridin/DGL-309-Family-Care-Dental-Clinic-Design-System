@@ -42,67 +42,105 @@
     <div class = "articleTitle spacingcont">
     <span>This pattern is for displaying images.</span>    
     </div>
-    <h3 class="articleTitle">Hero Image</h3>
-    <div class="articleTitle containerBodyText">
-      <figure><img src="Images/HeroImage.png" alt="Alternative text for this image" width="100%"></figure>
+    <h3 class="articleTitle">Image Size: 360x240</h3>
+    <div>
+      <div class="containerImage"></div>
     </div>
-    <details class = "articleTitle code" style="font-weight:bold">
+    <details class = "code" style="font-weight:bold">
         <summary>HTML AND CSS Code</summary>
         <h4>HTML CODE</h4>
     <pre class="prettyprint">
       <xmp>
-        <div class="containerHeroImage">
-          <figure><img src="Images/HeroImage.png" alt="Alternative text for this image"></figure>
+        <div class="containerImage">
+          <figure>    
+            <img src="Images/360x240.png" alt="Alternative text for this image"/>
+        </figure>
         </div>
       </xmp>  
     </pre>
     <h4>CSS CODE</h4>
     <pre class="prettyprint">
     <xmp>
-        .box5{
-            width:1rem;
-            height:1rem;
-        }
-        .box7{
-            width:2rem;
-            height:2rem;
-        }
-        .box11{
-            width:20rem;
-            height:2rem;
-            background-color:#69cff9;
-            font-size: smaller;
-            text-align: center;
-        }
-        .box12{
-            width:20rem;
-            height:1rem;
-            background-color:#69cff9;
-            font-size: smaller;
-            text-align: center;
-        }
-        .boxcont{
-            display:flex;
-            flex-direction: row;
-            margin-left:2rem;
-            margin-right:2rem;
-            margin-top:0;
-        }
-        .label{
-            margin-left: 2rem;
-        }
-        .labelcont{
-            margin-top:2rem;
-            padding:0;
-            background-color: white;
-            border: 1px solid whitesmoke;
-            box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
-            margin-left:2rem;
-            width: 400px;    
+        img{
+          border-radius: 1rem;
+          box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
         }
     </xmp>  
     </pre>     
-    </details> 
+    </details>
+    <div class = "articleTitle spacingcont">
+    <h3>Image with caption</h3>
+    <span>A caption should be used to provide additional context about the image</span>    
+    </div>
+    <h3 class="articleTitle">Image Size: 500x500</h3>
+    <div>
+      <div class="containerImage2"></div>
+      <span class="font2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eius molestias deserunt minima quasi laborum</span>
+    </div>
+    <details class = "code" style="font-weight:bold">
+        <summary>HTML AND CSS Code</summary>
+        <h4>HTML CODE</h4>
+    <pre class="prettyprint">
+      <xmp>
+        <div class="containerImage">
+          <figure>
+            <img src="Images/500x500.png" alt="Alternative text for this image"/>
+            <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eius molestias deserunt minima quasi laborum</figcaption>
+          </figure>
+        </div>
+      </xmp>  
+    </pre>
+    <h4>CSS CODE</h4>
+    <pre class="prettyprint">
+    <xmp>
+      img{
+        border-radius: 1rem;
+        box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+      }
+    </xmp>  
+    </pre>     
+    </details>
+    <div class = "articleTitle spacingcont">
+      <h3>Linked Image</h3>
+      <span>This example shows a linked image with a caption containing a separate link.</span>    
+      </div>
+      <h3 class="articleTitle">Image Size: 750x500</h3>
+      <div>
+        <div class="containerImage3"><a class="linkImage1" href="#"><img class="image1"src="Images/LinkedImage.png"></a></div>
+        <span class="font2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eius <a href="#" class="linkwhite2">molestias deserunt minima</a>
+           quasi laborum</span>
+      </div>
+      <details class = "code" style="font-weight:bold">
+          <summary>HTML AND CSS Code</summary>
+          <h4>HTML CODE</h4>
+      <pre class="prettyprint">
+        <xmp>
+          <div class="containerImage">
+            <figure>
+              <a href="#"><img src="Images/750x500.png" alt="Alternative text for this image"/></a>
+              <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eius <a href="#">molestias deserunt minima</a> quasi laborum</figcaption>
+            </figure>
+          </div>
+        </xmp>  
+      </pre>
+      <h4>CSS CODE</h4>
+      <pre class="prettyprint">
+      <xmp>
+        img{
+          border-radius: 1rem;
+          box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+        }
+        img:hover{
+          border: 2px solid #cbe948;
+          border-radius: 1rem;   
+        }
+        img:active{
+          border: 5px solid #cbe948;
+          border-radius: 1rem;   
+        }
+      </xmp>  
+      </pre>     
+      </details>   
   </article>
   <nav class="navMain" id="mainNav">
     <div class = "Guides1"><h3 style="color:#b0b0b1;">Style</h3>
@@ -110,7 +148,7 @@
         <li><a class = "list1" href="style.html">Typography</a></li>
         <li><a class = "list1" href="colours.html">Colours</a></li>
         <li><a class = "list1" href="spacing.html">Spacing</a></li>
-        <li><a class = "list1" href="images.html">Images</a></li>         
+        <li><a class = "list2" href="images.html" >Images</a></li>         
       </ul></div>
     <div class = "Guides1"><h3>Navigation</h3>
       <ul style="list-style-type: none">
