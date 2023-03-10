@@ -1,0 +1,433 @@
+h1, h2, h3, h4{
+    font-family: Helvetica,sans-serif;
+}
+body{
+    font-family: Verdana,sans-serif;
+}
+.containerHeader{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;    
+  }
+header{
+  padding: 0;
+  background: white;    
+  }
+.logo{
+  padding: 0;
+  margin: 0;
+}
+a{
+  color:black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #cbe948;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color: #b0b0b9;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.containerTitle{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.title{
+    margin-top:0;
+    margin-bottom:0;
+}
+.hr1{
+    border-color:#cbe948;
+    border-style: ridge;
+    border-width: 0.25rem;   
+    margin-bottom: 0;      
+}
+.hr2{
+    border-color:#cbe948;
+    border-style: ridge;
+    border-width: 0.25rem;   
+    margin-top: 0; 
+    margin-bottom: 0;     
+}
+hr{
+    border-color:#cbe948;
+    border-style: ridge;
+    border-width: 0.25rem;      
+}
+p{
+    margin:0;
+}
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background:radial-gradient(white,#69cff9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: black;
+  height: 50px;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+/*HERO IMAGE*/
+#thehero {
+width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-image: url(Images/todays-rdh-dental-instruments3.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.the-inner {
+    background-color: #96c789;
+    opacity: 80%;
+    width: 50vw;
+    padding: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    
+}
+
+.the-inner h1{
+color: #000000;
+font-family: Helvetica, sans-serif;
+font-style: italic;
+font-weight: 400;
+line-height: 1.4;
+font-size: 2.1rem;
+
+}
+
+.the-inner p {
+color: black;
+text-align: left;
+font-size: 1.1rem;  
+}
+
+
+
+.the-inner a {
+color: #000000;
+}
+
+
+@media (max-width: 700px) {
+  .containerTitle{
+    width:60%;
+    font-size:60%;    
+  }
+  .hr1{
+    margin-top: 0;
+  }
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
+.carousel-item img{
+    width: auto;
+    height: 800px;
+    margin: auto; 
+    display: block;
+    }
+.carousel-inner{
+    background:radial-gradient(white,#69cff9);
+}
+.textCarousel{
+    text-align: center;
+    vertical-align: center;
+    margin:0;
+    padding:2rem;
+    background-color: #96c789;
+    opacity: 90%;
+}
+.calltoActioncontainer{
+    display: flex; 
+    flex-direction: row;   
+    justify-content: center;
+    margin:2rem 0 0 0;
+    font-family: Helvetica, Sans-Serif; 
+    background-color: white;
+    opacity: 90%;   
+  }
+  .logo2{
+      margin-bottom: 2rem;
+  }
+  .statement{
+      display: flex;
+      justify-content: center;
+      padding: 0px 10px 0px 10px;
+      font-size: 17px;
+  }
+  .primaryButton{
+    background:radial-gradient(white,#69cff9);
+    color: black;
+    padding: 1rem 3rem;
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid #cbe948;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+    margin: 1rem;
+}
+.primaryButton:hover{
+    background:radial-gradient(#96c789,#69cff9);
+    color:black;
+}
+.primaryButton:active{
+    background:radial-gradient(white,#69cff9);
+    color:#b0b0b1;
+}
+.avatar {
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+body{
+    background-color:#eee;
+}
+.card{    
+    border:1px solid #cbe948;
+    height:500px;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+}
+.user-content p{
+    margin-top:5px;
+    font-size:12px;
+}
+.ratings i{
+    color:#69cff9;
+}
+/*FORMS*/
+input[type="reset"] {
+    background:radial-gradient(white,#fac898);
+    color: black;
+    padding: 1rem 3rem;
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid #cbe948;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+    margin: 1rem;
+    cursor: pointer;
+  }
+  
+  input[type="reset"]:hover {
+    background:radial-gradient(#ff6961,#fac898);
+    color:black;
+  }
+  input[type="reset"]:active{
+    background:radial-gradient(white,#fac898);
+    color:#b0b0b1;
+}
+  input[type="submit"] {
+    background:radial-gradient(white,#69cff9);
+    color: black;
+    padding: 1rem 3rem;
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid #cbe948;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+    margin: 1rem;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background:radial-gradient(#96c789,#69cff9);
+    color:black;;
+  }
+  input[type="submit"]:active{
+    background:radial-gradient(white,#69cff9);
+    color:#b0b0b1;
+}
+  
+  /* ===============
+     STRUCTURE
+     =============== */
+  
+  .wrapper-form {
+   
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 0px 20px;
+    max-width: 600px;
+    margin: 0 50px 0px 20px;
+  }
+  
+  .wrapper-button {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* ===============
+     FORM CONTROLS
+     =============== */
+  
+  input,
+  select,
+  textarea {
+    font-size:medium;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbe948;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbe948;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbe948;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  fieldset {
+    margin-bottom: 16px;
+    border: 1px solid #cbe948;
+  }
+  
+  .label-required {
+    font-size: 0.8rem;
+    color: #ff6961;
+  }
+  .containerForm{
+    background-color:#96c789;
+    padding:2rem 4rem 2rem 2rem;
+    margin:2rem 2rem 0;
+    border-radius:1rem;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+  }
+  .containerForm1{
+    margin-bottom:2rem;
+  }

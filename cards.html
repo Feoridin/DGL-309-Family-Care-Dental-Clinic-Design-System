@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=html&amp;skin=sunburst"></script>
+  <link rel="icon" href="images/TEETH.ico" type="image/x-icon">
+  <link rel = "stylesheet" href="clinic.css"><!--css style link-->
+  <link rel = "stylesheet" href="style.css"><!--css style link-->
+  <link rel = "stylesheet" href="colours.css"><!--css style link-->
+  <link rel = "stylesheet" href="spacing.css"><!--css style link-->
+  <link rel = "stylesheet" href="images.css"><!--css style link-->
+  <link rel = "stylesheet" href="navigation.css"><!--css style link-->
+  <link rel = "stylesheet" href="breadcrumbs.css"><!--css style link-->
+  <link rel = "stylesheet" href="forms.css"><!--css style link-->
+  <link rel = "stylesheet" href="banner.css"><!--css style link-->
+  <title>Family Care Dental Clinic Design System</title>
+  <!--Resources: https://youtu.be/1op-PqCGdIA - this link is to display code as code in a browser-->
+  <!--https://alvarotrigo.com/blog/hamburger-menu-css/ - this link is where the hamburger menu code got from-->
+</head>
+<body>
+  <header id="pageHeader">
+    <div class="containerHeader">
+      <div class = "logo"><!--animated logo gif file-->
+        <a href="home.html"><img src="Images/1x/CAREDENTALCLINICDAPITANDIPOLOG.gif" alt="Family Care Dental Clinci Design System" width="130"></a>
+      </div>
+      <h1 class = "title"><a href="home.html">Family Care Dental Clinic Pattern Library</a></h1>
+    </div>
+  </header>
+  <div id="spacer1"><hr class = "hr1"></div>   
+  <article id="mainArticle" class="classArticle">
+    <div class="containerStyle">
+    <details class = "articleTitle" style="font-weight:bold">
+        <summary>Components</summary>
+        <ul style="list-style-type: none">
+            <li><a class = "list1" href="avatar.html">Avatar</a></li>
+            <li><a class = "list1" href="banner.html">Banner</a></li>
+            <li><a class = "list1" href="cards.html">Cards</a></li>
+            <li><a class = "list1" href="carousel.html">Carousel</a></li>         
+        </ul></div>
+    </details> 
+    </div>        
+    <h2 class="articleTitle" id="Colours">Cards</h2> 
+    <hr>
+    <div class = "articleTitle spacingcont">
+    <h4>Cards - Use on the testimonial section of the page</h4>    
+    </div> 
+    <div class = "articleTitle spacingcont cards">
+        <img src="Images/cards.png" alt="Family Care Dental Clinci Design System"> 
+    </div>
+    
+    <details class = "code" style="font-weight:bold">
+      <summary>HTML AND CSS Code</summary>
+        <h4>HTML CODE</h4>
+        <pre class="prettyprint">
+          <xmp>
+            <div class="textCarousel">
+                <h4>Testimonials</h4>
+                </div>
+            <div class="testimonialcontainer">
+                <div class="container mt-5 mb-5">
+                    <div class="row g-2">
+                        <div class="col-md-4">
+                            <div class="card p-3 text-center px-4">    
+                                <div class="user-image">        
+                                    <img src="Images/Piolo.jpg" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="user-content">
+                                    <h5 class="mb-0">Piolo</h5>
+                                    <span>Hotel Manager</span>
+                                    <p>“My first day I came to the clinic of Dr. Glenn, his team were amazing. 
+                                        They have done their best to make me feel comfortable. I like to thank them for 
+                                        the best treatment they gave me and I will recommend my friends to come to Family
+                                         Care Dental Clinic as well. My teeth looked fantastic!”</p>
+                                </div>
+                                <div class="ratings">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>  
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card p-3 text-center px-4">
+                                <div class="user-image">   
+                                    <img src="Images/Maritess.png" alt="Avatar" class="avatar">   
+                                </div>
+                                <div class="user-content">
+                                    <h5 class="mb-0">Maritess</h5>
+                                    <span>Business Entrepeneur</span>
+                                    <p>“Doc Glenn definitely is a good dentist and his clinic is very child friendly, my daughter 
+                                        now loves to go to a dentist. Thank you Doc for taking care of my teeth and also to my daughter. ”</p>  
+                                </div>
+                                <div class="ratings">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>   
+                                </div>  
+                            </div>  
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card p-3 text-center px-4"> 
+                                <div class="user-image">       
+                                    <img src="Images/dolphy.png" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="user-content">  
+                                    <h5 class="mb-0">Dolphy</h5>
+                                    <span>Architect</span>
+                                    <p>“I definitely recommend this clinic, they have the state of the art equipments and Doc Glenn 
+                                        is very accommodating. Thank you for making my dentures, it is more than I expected for... ”</p>   
+                                </div>
+                                <div class="ratings">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>   
+                                </div>  
+                            </div>   
+                        </div>  
+                    </div>
+                </div>
+            </div>
+          </xmp>  
+        </pre>
+        <h4>CSS CODE</h4>
+        <pre class="prettyprint">
+        <xmp>
+            .avatar {
+                vertical-align: middle;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+            body{
+                background-color:#eee;
+            }
+            .card{    
+                border:1px solid #cbe948;
+                height:500px;
+                box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+                border-radius: 1rem;
+            }
+            .user-content p{
+                margin-top:5px;
+                font-size:12px;
+            }
+            .ratings i{
+                color:#69cff9;
+            }
+          </xmp>  
+        </pre>     
+    </details>
+    
+  </article>
+  <nav class="navMain" id="mainNav">
+    <div class = "Guides1"><h3 style="color:#b0b0b1;">Style</h3>
+      <ul style="list-style-type: none">
+        <li><a class = "list1" href="style.html">Typography</a></li>
+        <li><a class = "list1" href="colours.html">Colours</a></li>
+        <li><a class = "list1" href="spacing.html">Spacing</a></li>
+        <li><a class = "list2" href="images.html" >Images</a></li>         
+      </ul></div>
+    <div class = "Guides1"><h3>Navigation</h3>
+      <ul style="list-style-type: none">
+        <li><a class = "list1" href="navigation.html">Hamburger menu</a></li>
+        <li><a class = "list1" href="buttons.html">Buttons</a></li>
+        <li><a class = "list1" href="breadcrumbs.html">Breadcrumbs</a></li>         
+      </ul>
+    </div>
+    <div class = "Guides1"><h3>Form</h3>
+      <ul style="list-style-type: none">
+        <li><a class = "list1" href="forms.html">Fields with placeholder text</a></li>
+        <li><a class = "list1" href="forms.html">Labels</a></li>
+        <li><a class = "list1" href="forms.html">Submit</a></li>        
+      </ul>
+    </div>
+    <div class = "Guides1"><h3>Components</h3>
+      <ul style="list-style-type: none">
+        <li><a class = "list1" href="avatar.html">Avatar</a></li>
+        <li><a class = "list1" href="banner.html">Banner</a></li>
+        <li><a class = "list1" href="cards.html">Cards</a></li>
+        <li><a class = "list1" href="carousel.html">Carousel</a></li>       
+      </ul>
+    </div>
+    <div class = "Guides1"><h3><a class = "list1" href="website-project-Feoridin/home.html" target="_blank">EXAMPLE SITE</a></h3></div>      
+  </nav>
+  <nav>
+    <section class="top-nav" id = "hamburger">
+      <div>
+        <a href="home.html"><img src="Images/LOGOTEETH.png" alt="Family Care Dental Clinci Design System" width="100"></a>
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
+        <li><a class = "list1" href="style.html">Style</a></li>
+        <li><a class = "list1" href="navigation.html">Navigation</a></li>
+        <li><a class = "list1" href="forms.html">Form</a></li>
+        <li><a class = "list1" href="avatar.html">Components</a></li>
+      </ul>
+    </section>
+    <hr class = "hr2">
+  </nav>     
+</body>
+</html>

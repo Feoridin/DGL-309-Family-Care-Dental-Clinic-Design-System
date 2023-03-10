@@ -33,6 +33,7 @@ figure{
     height:500px;
     background:radial-gradient(white,#96c789);
     margin:2rem 0;
+    margin-left:2rem;
     border-radius: 1rem;
     box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
 }
