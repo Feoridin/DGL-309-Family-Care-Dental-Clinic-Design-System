@@ -189,7 +189,7 @@ body{
       padding: 0.5em 0;
       width: 100%;
       color: black;
-      background:radial-gradient(white,#96c789);
+      background:radial-gradient(white,#69cff9);
     }
     .menu-hamburger > li:not(:last-child) {
       border-bottom: 1px solid #444;
