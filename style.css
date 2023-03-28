@@ -45,6 +45,7 @@
 pre.prettyprint{
     font-size:larger;
     overflow-x:scroll;
+    width: 90%
 }
 .articleTitle{
     margin-right:1rem;
@@ -99,13 +100,12 @@ tr:nth-child(even) {
     width:90%;
     margin-right:2rem;
 }
-.prettyprint{
-    margin-right:2rem;
+pre.prettyprint{
+    margin:0px;
     overflow-x:scroll;
+    width:300px;
 }
-.code{
-    width:auto;
-}
+
 }
 
 

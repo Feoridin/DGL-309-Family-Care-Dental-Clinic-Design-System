@@ -23,7 +23,7 @@
     margin-bottom: 1rem;
 }
 .Gray{
-    background:radial-gradient(white,#b0b0b1);
+    background:radial-gradient(white 30%,#b0b0b1);
 }
 .linkgray:hover{
     color:#69cff9;
@@ -32,7 +32,7 @@
     color:#b0b0b1;
 }
 .Blue{
-    background:radial-gradient(white,#69cff9);
+    background:radial-gradient(white 30%,#69cff9);
 }
 .linkblue:hover{
     color:#96c789;
@@ -44,6 +44,9 @@
     font-style: italic;
     color:#b3dfdf;
     text-decoration: underline;
+}
+.linkwhite2:hover{
+    color:#69CFF9;
 }
 .primaryButton{
     background:radial-gradient(white,#69cff9);
@@ -59,10 +62,14 @@
 .primaryButton:hover{
     background:radial-gradient(#96c789,#69cff9);
     color:black;
+    animation-name: colorAnimation2;
+    animation-duration: 1s;
+    transition-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 .primaryButton:active{
     background:radial-gradient(white,#69cff9);
-    color:#b0b0b1;
+    color:#002307;
 }
 .secondaryButton{
     background:radial-gradient(white,#96c789);
@@ -78,10 +85,14 @@
 .secondaryButton:hover{
     background:radial-gradient(#69cff9,#96c789);
     color:black;
+    animation-name: colorAnimation3;
+    animation-duration: 1s;
+    transition-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 .secondaryButton:active{
     background:radial-gradient(white,#96c789);
-    color:#b0b0b1;
+    color:#002307;
 }
 .warningButton{
     background:radial-gradient(white,#fac898);
@@ -126,6 +137,31 @@
     flex-direction: row;
     justify-content: space-evenly;
 }
+.navMain{
+    height:210vh;
+}
+/*The font background animation code*/
+@keyframes colorAnimation3{
+    0%{background:radial-gradient(white,#96c789);}
+    15%{background:radial-gradient(white 5%,#96c789);}
+    30%{background:radial-gradient(white 10%,#96c789);}
+    45%{background:radial-gradient(white 20%,#96c789);}
+    60%{background:radial-gradient(white 30%,#96c789);}
+    75%{background:radial-gradient(white 20%,#96c789);}
+    90%{background:radial-gradient(white 10%,#96c789);}
+    100%{background:radial-gradient(white 5%,#96c789);}
+}
+@keyframes colorAnimation2{
+    0%{background:radial-gradient(white,#69cff9);}
+    15%{background:radial-gradient(white 5%,#69cff9);}
+    30%{background:radial-gradient(white 10%,#69cff9);}
+    45%{background:radial-gradient(white 20%,#69cff9);}
+    60%{background:radial-gradient(white 30%,#69cff9);}
+    75%{background:radial-gradient(white 20%,#69cff9);}
+    90%{background:radial-gradient(white 10%,#69cff9);}
+    100%{background:radial-gradient(white 5%,#69cff9);}
+}
+
 /* Stack the layout on small devices/viewports. */
 @media all and (max-width: 805px) {
     .colorcont{
