@@ -24,23 +24,14 @@
     75%{background-image:linear-gradient(to bottom,white 5%,#96c789);}
     90%{background-image:linear-gradient(to bottom,white 2%,#96c789);}
     100%{background-image:linear-gradient(to bottom,white,#96c789);}
-
-    
-
-
-
-
-
 }
 .primaryfontregular:hover, .primaryfontitalic:hover, .primaryfontbold:hover,
 .primaryfontregular2:hover, .primaryfontitalic2:hover, .primaryfontbold2:hover{
     background-image:linear-gradient(to bottom,white,#96c789);
     animation-name: colorAnimation;
-    animation-duration: 10s;
+    animation-duration: 2s;
     transition-timing-function: linear;
     animation-iteration-count: infinite;
-
-
 }
 .primaryfontregular2, .primaryfontitalic2, .primaryfontbold2{
     background-image:linear-gradient(to bottom,white,#96c789);

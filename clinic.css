@@ -52,6 +52,17 @@ header{
 }
 li{
   padding: 0.5rem;
+  display:flex;
+  justify-content: left;
+}
+.icon1{
+  margin-right:12px;
+  width: 16px;
+}
+.icon2{
+  margin-right:12px;
+  width:20px;
+  height:20px;
 }
 a{
   font-weight: bold;
@@ -63,9 +74,10 @@ a:link {
   text-decoration: none;
 }
 a:hover {
-  color: #cbe948;
+  color: black;
   background-color: transparent;
-  text-decoration: none;
+  text-decoration: underline;
+  font-size: 101%;
 }
 a:active {
   color: #b0b0b9;
