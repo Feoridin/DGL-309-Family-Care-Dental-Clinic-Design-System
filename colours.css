@@ -68,8 +68,9 @@
     animation-iteration-count: infinite;
 }
 .primaryButton:active{
-    background:radial-gradient(white,#69cff9);
-    color:#002307;
+    background:radial-gradient(#69cff9,#69cff9);
+    color:black;
+    animation: gelatine .5s infinite;
 }
 .secondaryButton{
     background:radial-gradient(white,#96c789);
@@ -91,8 +92,9 @@
     animation-iteration-count: infinite;
 }
 .secondaryButton:active{
-    background:radial-gradient(white,#96c789);
-    color:#002307;
+    background:radial-gradient(#96c789,#96c789);
+    color:black;
+    animation: gelatine 0.5s infinite;
 }
 .warningButton{
     background:radial-gradient(white,#fac898);
@@ -106,12 +108,13 @@
     margin: 1rem;
 }
 .warningButton:hover{
-    background:radial-gradient(#ff6961,#fac898);
+    background:radial-gradient(white 30%,#fac898);
     color:black;
 }
 .warningButton:active{
-    background:radial-gradient(white,#fac898);
-    color:#b0b0b1;
+    background:radial-gradient(#fac898,#fac898);
+    color:black;
+    animation: gelatine 0.5s infinite;
 }
 .dangerButton{
     background:radial-gradient(white,#ff6961);
@@ -125,12 +128,13 @@
     margin: 1rem;
 }
 .dangerButton:hover{
-    background:radial-gradient(#fac898,#ff6961);
+    background:radial-gradient(white 30%,#ff6961);
     color:black;
 }
 .dangerButton:active{
-    background:radial-gradient(white,#ff6961);
-    color:#b0b0b1;
+    background:radial-gradient(#ff6961,#ff6961);
+    color:#002307;
+    animation: gelatine 0.5s infinite;
 }
 .buttons{
     display:flex;
@@ -140,6 +144,7 @@
 .navMain{
     height:210vh;
 }
+
 /*The font background animation code*/
 @keyframes colorAnimation3{
     0%{background:radial-gradient(white,#96c789);}
@@ -161,7 +166,12 @@
     90%{background:radial-gradient(white 10%,#69cff9);}
     100%{background:radial-gradient(white 5%,#69cff9);}
 }
-
+@keyframes gelatine {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.98, 1.02); }
+    50% { transform: scale(1.02, 0.98); }
+    75% { transform: scale(0.98, 1.02); }
+  }
 /* Stack the layout on small devices/viewports. */
 @media all and (max-width: 805px) {
     .colorcont{
@@ -171,5 +181,27 @@
     .buttons{
         display:block;
     }
-    
+    .containerStyle{
+        margin-top: 15px;
+    }
+   .containerBodyText{
+    width:80vw;
+    padding:1rem;
+    margin-right:1rem;
+    margin-left:1rem;
+   }
+   .buttons{
+    display:flex;
+    flex-direction: column;
+    width: 250px;
+    margin:2rem 2rem 2rem 3rem;
+    padding:2rem;
+   }
+   .colorcont{
+    margin:0px;
+   }
+   .color{
+    margin-right:1.5rem;
+    margin-bottom:1rem;
+   }
 }
