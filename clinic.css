@@ -57,12 +57,12 @@ li{
 }
 .icon1{
   margin-right:12px;
-  width: 16px;
+  width: 30px;
 }
 .icon2{
   margin-right:12px;
-  width:20px;
-  height:20px;
+  width:30px;
+  height:30px;
 }
 a{
   font-weight: bold;
@@ -126,7 +126,8 @@ a:active {
     background:radial-gradient(white,#69cff9);
     background-size: cover;
     border-right: 3px solid #cbe948;
-    margin-top: -2px;   
+    margin-top: -2px;
+    height:100vh;   
 }
 .hr1{
     border-color:#cbe948;
@@ -295,7 +296,7 @@ h2{
     .menu {
       position: absolute;
       top: 48px;
-      margin-top: 50px;
+      margin-top: 30px;
       left: 0;
       flex-direction: column;
       width: 100%;
@@ -318,11 +319,11 @@ h2{
     .menu > li {
       display: flex;
       justify-content: center;
-      margin: 0;
-      padding: 0.5em 0;
+      align-content: center;
+      padding-top: 2rem;
       width: 100%;
       color: black;
-      background-image: url("Images/background_dental_clinic.jpg");
+      background:radial-gradient(white,#69cff9);
       opacity: 98%;
     }
     .menu > li:not(:last-child) {
@@ -330,6 +331,9 @@ h2{
     }
     .menu>li>a{
         color: black;
+    }
+    .list1{
+      margin-top: 0.5rem;
     }
   } 
 }
