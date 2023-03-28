@@ -14,6 +14,34 @@
     border: 2px solid whitesmoke;
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
 }
+/*The font background animation code*/
+@keyframes colorAnimation{
+    0%{background-image:linear-gradient(to bottom,white,#96c789);}
+    15%{background-image:linear-gradient(to bottom,white 5%,#96c789);}
+    30%{background-image:linear-gradient(to bottom,white 10%,#96c789);}
+    45%{background-image:linear-gradient(to bottom,white 15%,#96c789);}
+    60%{background-image:linear-gradient(to bottom,white 10%,#96c789);}
+    75%{background-image:linear-gradient(to bottom,white 5%,#96c789);}
+    90%{background-image:linear-gradient(to bottom,white 2%,#96c789);}
+    100%{background-image:linear-gradient(to bottom,white,#96c789);}
+
+    
+
+
+
+
+
+}
+.primaryfontregular:hover, .primaryfontitalic:hover, .primaryfontbold:hover,
+.primaryfontregular2:hover, .primaryfontitalic2:hover, .primaryfontbold2:hover{
+    background-image:linear-gradient(to bottom,white,#96c789);
+    animation-name: colorAnimation;
+    animation-duration: 10s;
+    transition-timing-function: linear;
+    animation-iteration-count: infinite;
+
+
+}
 .primaryfontregular2, .primaryfontitalic2, .primaryfontbold2{
     background-image:linear-gradient(to bottom,white,#96c789);
     margin: 1rem;    
