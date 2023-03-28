@@ -123,7 +123,7 @@ a:active {
     background-color: #69cff9;
 }
 .navMain{
-    background:radial-gradient(white,#69cff9);
+    background:radial-gradient(white 50%,#69cff9);
     background-size: cover;
     border-right: 3px solid #cbe948;
     margin-top: -2px;
@@ -229,12 +229,13 @@ h2{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background:radial-gradient(white,#69cff9);
+    background:radial-gradient(white 30%,#69cff9);
     background-size: cover;
     height: 50px;
     padding: 1em;
     top: 0;
     position: relative;
+    border-bottom: 3px solid #cbe948;
   }
   .menu {
     display: flex;
@@ -323,7 +324,7 @@ h2{
       padding-top: 2rem;
       width: 100%;
       color: black;
-      background:radial-gradient(white,#69cff9);
+      background:radial-gradient(white 30%,#69cff9);
       opacity: 98%;
     }
     .menu > li:not(:last-child) {
