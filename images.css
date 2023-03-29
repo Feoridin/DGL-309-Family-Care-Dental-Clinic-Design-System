@@ -23,7 +23,7 @@ figure{
 .containerImage{
     width:360px;
     height:240px;
-    background:radial-gradient(white,#96c789);
+    background:radial-gradient(white,#69cff9);
     margin:2rem;
     border-radius: 1rem;
     box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
@@ -31,7 +31,7 @@ figure{
 .containerImage2{
     width:500px;
     height:500px;
-    background:radial-gradient(white,#96c789);
+    background:radial-gradient(white,#FAC898);
     margin:2rem 0;
     margin-left:2rem;
     border-radius: 1rem;
@@ -59,7 +59,12 @@ figure{
 .list2{
     text-decoration: underline;
     font-style: italic;
-    
+}
+.navMain{
+    height:auto;
+}
+.code{
+    padding:2rem;
 }
 /* Stack the layout on small devices/viewports. */
 @media all and (max-width: 992px) {
@@ -67,7 +72,12 @@ figure{
         width:90%;
         margin-right:2rem;
     }
-    .image1{
-        width:auto;
+    .classArticle{
+        height:auto;
+        overflow-x:auto;
     }
+    header{
+        overflow:auto;
+    }
+   
 }
