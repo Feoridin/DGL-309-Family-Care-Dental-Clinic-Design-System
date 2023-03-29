@@ -119,11 +119,11 @@ input[type="reset"] {
   
   .label-required {
     font-size: 14px;
-    font-weight: bold;
+    font-weight: bolder;
     color: #ff6961;
   }
   .containerForm{
-    background:radial-gradient(white 30%,#b3dfdf);;
+    background:radial-gradient(white 30%,#b3dfdf);
     padding:2rem 4rem 2rem 2rem;
     margin:0 2rem 0;
     border-radius:1rem;
