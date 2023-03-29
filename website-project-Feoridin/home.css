@@ -181,6 +181,16 @@ color: #000000;
   margin-bottom:1rem;
 }
 /*The font background animation code*/
+@keyframes colorAnimation5{
+  0%{background:radial-gradient(white,#ff6961);}
+  15%{background:radial-gradient(white 5%,#ff6961);}
+  30%{background:radial-gradient(white 10%,#ff6961);}
+  45%{background:radial-gradient(white 20%,#ff6961);}
+  60%{background:radial-gradient(white 30%,#ff6961);}
+  75%{background:radial-gradient(white 20%,#ff6961);}
+  90%{background:radial-gradient(white 10%,#ff6961);}
+  100%{background:radial-gradient(white 5%,#ff6961);}
+}
 @keyframes colorAnimation4{
   0%{background:radial-gradient(white,#FAC898);}
   15%{background:radial-gradient(white 5%,#FAC898);}
@@ -468,6 +478,71 @@ img.imageService{
   background:radial-gradient(#96c789,#96c789);
   color:black;
   animation: gelatine 0.5s infinite;
+}
+.dangerButton{
+  background:radial-gradient(white,#ff6961);
+  color: black;
+  padding: 1rem 3rem;
+  font-size: large;
+  font-weight: bold;
+  border: 1px solid #cbe948;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+  margin: 1rem;
+}
+.dangerButton:hover{
+  background:radial-gradient(white 30%,#ff6961);
+  color:black;
+  animation-name: colorAnimation5;
+  animation-duration: 1s;
+  transition-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.dangerButton:active{
+  background:radial-gradient(#ff6961,#ff6961);
+  color:#002307;
+  animation: gelatine 0.5s infinite;
+}
+.breadcrumb{
+  list-style: none;
+  display:flex;
+  flex-direction: row;
+  margin:0;
+}
+ul.breadcrumb{
+  margin-bottom:0;
+  padding-bottom:0;
+  padding-top:.1rem;
+  background:radial-gradient(white 100%,#69cff9);
+}
+.breadcrumbText{
+  width:5rem;
+  transform: skew(-20deg);
+  background-color: #96c789;
+  text-align: center;
+  margin-left:.1rem;   
+  padding: .5rem 0.5rem .5rem 0.5rem;
+  border-left:1px solid #b0b0b1;
+  border-right:1px solid #b0b0b1;
+  border-top-right-radius: 0.5rem;
+}
+.bText{
+  background-color: white;
+  border: 1px solid #b0b0b1;
+}
+.bText2{
+  width:fit-content;
+  background-color: white;
+}
+.hr4{
+  margin-top:-1.5rem;
+  border: 4px ridge #cbe948;
+}
+.breadcrumbText:hover{
+  font-size: 101%;
+}
+.bText:hover{
+  font-size:100%;
 }
 /* Stack the layout on small devices/viewports. */
 @media (max-width: 700px) {

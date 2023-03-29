@@ -156,8 +156,11 @@ body{
     transform: rotate(-405deg);
   }
   .navMain{
-    height:100vh;
-  } 
+    height:auto;
+  }
+  .buttonscont{
+    padding-left:2rem;
+  }
   @media (max-width: 700px) {
     .menu-button-container-hamburger {
       display: flex;

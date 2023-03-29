@@ -134,6 +134,10 @@
 .dangerButton:hover{
     background:radial-gradient(white 30%,#ff6961);
     color:black;
+    animation-name: colorAnimation5;
+    animation-duration: 1s;
+    transition-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 .dangerButton:active{
     background:radial-gradient(#ff6961,#ff6961);
@@ -150,6 +154,16 @@
 }
 
 /*The font background animation code*/
+@keyframes colorAnimation5{
+    0%{background:radial-gradient(white,#ff6961);}
+    15%{background:radial-gradient(white 5%,#ff6961);}
+    30%{background:radial-gradient(white 10%,#ff6961);}
+    45%{background:radial-gradient(white 20%,#ff6961);}
+    60%{background:radial-gradient(white 30%,#ff6961);}
+    75%{background:radial-gradient(white 20%,#ff6961);}
+    90%{background:radial-gradient(white 10%,#ff6961);}
+    100%{background:radial-gradient(white 5%,#ff6961);}
+}
 @keyframes colorAnimation4{
     0%{background:radial-gradient(white,#FAC898);}
     15%{background:radial-gradient(white 5%,#FAC898);}
