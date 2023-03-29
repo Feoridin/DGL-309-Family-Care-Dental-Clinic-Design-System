@@ -60,7 +60,7 @@
     margin: 1rem;
 }
 .primaryButton:hover{
-    background:radial-gradient(#96c789,#69cff9);
+    background:radial-gradient(white,#69cff9);
     color:black;
     animation-name: colorAnimation2;
     animation-duration: 1s;
@@ -110,6 +110,10 @@
 .warningButton:hover{
     background:radial-gradient(white 30%,#fac898);
     color:black;
+    animation-name: colorAnimation4;
+    animation-duration: 1s;
+    transition-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 .warningButton:active{
     background:radial-gradient(#fac898,#fac898);
@@ -146,6 +150,16 @@
 }
 
 /*The font background animation code*/
+@keyframes colorAnimation4{
+    0%{background:radial-gradient(white,#FAC898);}
+    15%{background:radial-gradient(white 5%,#FAC898);}
+    30%{background:radial-gradient(white 10%,#FAC898);}
+    45%{background:radial-gradient(white 20%,#FAC898);}
+    60%{background:radial-gradient(white 30%,#FAC898);}
+    75%{background:radial-gradient(white 20%,#FAC898);}
+    90%{background:radial-gradient(white 10%,#FAC898);}
+    100%{background:radial-gradient(white 5%,#FAC898);}
+}
 @keyframes colorAnimation3{
     0%{background:radial-gradient(white,#96c789);}
     15%{background:radial-gradient(white 5%,#96c789);}

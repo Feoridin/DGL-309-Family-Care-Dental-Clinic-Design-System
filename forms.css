@@ -12,12 +12,17 @@ input[type="reset"] {
   }
   
   input[type="reset"]:hover {
-    background:radial-gradient(#ff6961,#fac898);
+    background:radial-gradient(white 30%,#fac898);
     color:black;
+    animation-name: colorAnimation4;
+    animation-duration: 1s;
+    transition-timing-function: linear;
+    animation-iteration-count: infinite;
   }
   input[type="reset"]:active{
-    background:radial-gradient(white,#fac898);
-    color:#b0b0b1;
+    background:radial-gradient(#fac898,#fac898);
+    color:black;
+    animation: gelatine .5s infinite;
 }
   input[type="submit"] {
     background:radial-gradient(white,#69cff9);
@@ -34,24 +39,29 @@ input[type="reset"] {
   
   input[type="submit"]:hover {
     background:radial-gradient(#96c789,#69cff9);
-    color:black;;
+    color:black;
+    animation-name: colorAnimation2;
+    animation-duration: 1s;
+    transition-timing-function: linear;
+    animation-iteration-count: infinite;
   }
   input[type="submit"]:active{
-    background:radial-gradient(white,#69cff9);
-    color:#b0b0b1;
+    background:radial-gradient(#69cff9,#69cff9);
+    color:black;
+    animation: gelatine .5s infinite;
 }
   
   /* ===============
      STRUCTURE
      =============== */
   
-  .wrapper-form {
-   
+  .wrapper-form {   
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 0px 20px;
     max-width: 600px;
     margin: 0 50px 0px 20px;
+    font-family: Verdana;
   }
   
   .wrapper-button {
@@ -66,8 +76,9 @@ input[type="reset"] {
   input,
   select,
   textarea {
-    font-size:medium;
+    font-size:16px;
     font-weight: bold;
+    font-family:Verdana;
   }
   
   input[type="text"],
@@ -75,7 +86,7 @@ input[type="reset"] {
   textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #cbe948;
+    border: 1px solid black;
     border-radius: 4px;
     margin-top: 0.5rem;
     margin-bottom: 16px;
@@ -85,7 +96,7 @@ input[type="reset"] {
   input[type="email"] {
     width: 100%;
     padding: 12px;
-    border: 1px solid #cbe948;
+    border: 1px solid black;
     border-radius: 4px;
     margin-top: 0.5rem;
     margin-bottom: 16px;
@@ -94,7 +105,7 @@ input[type="reset"] {
   input[type="number"] {
     width: 100%;
     padding: 12px;
-    border: 1px solid #cbe948;
+    border: 1px solid black;
     border-radius: 4px;
     margin-top: 0.5rem;
     margin-bottom: 16px;
@@ -102,15 +113,17 @@ input[type="reset"] {
   }
   fieldset {
     margin-bottom: 16px;
-    border: 1px solid #cbe948;
+    border: 1px solid black;
+    width:100%;
   }
   
   .label-required {
-    font-size: 0.8rem;
+    font-size: 14px;
+    font-weight: bold;
     color: #ff6961;
   }
   .containerForm{
-    background-color:#96c789;
+    background:radial-gradient(white 30%,#b3dfdf);;
     padding:2rem 4rem 2rem 2rem;
     margin:0 2rem 0;
     border-radius:1rem;
@@ -118,4 +131,26 @@ input[type="reset"] {
   }
   .containerForm1{
     margin-bottom:2rem;
+  }
+  .navMain{
+    height:auto;
+  }
+  @media all and (max-width: 530px) {
+    input[type="reset"] {
+      padding: 1rem 2rem;
+      font-size: medium;
+      margin-left:0rem;
+    }
+    input[type="submit"] {
+      padding: 1rem 2rem;
+      font-size: medium;
+      margin-right:1rem;
+    }
+    .classArticle{
+      overflow:auto;
+    }
+    header{
+        overflow:auto;
+    }
+  
   }
