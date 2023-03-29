@@ -16,4 +16,17 @@
 .cards{
     width: 100%;
 }
-
+.box4{
+    margin:2rem;
+    width:100vw; 
+    height:auto;
+}
+.Bottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+iframe{
+    margin:0 2rem;
+}
