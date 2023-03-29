@@ -16,3 +16,6 @@
 .cards{
     width: 100%;
 }
+.card{
+    background-color: red;
+}
