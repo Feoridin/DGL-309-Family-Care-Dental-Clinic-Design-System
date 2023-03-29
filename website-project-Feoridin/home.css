@@ -445,6 +445,30 @@ img.imageService{
   border-radius: 1rem;
   box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
 }
+.secondaryButton{
+  background:radial-gradient(white,#96c789);
+  color: black;
+  padding: 1rem 3rem;
+  font-size: large;
+  font-weight: bold;
+  border: 1px solid #cbe948;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+  margin: 1rem;
+}
+.secondaryButton:hover{
+  background:radial-gradient(#69cff9,#96c789);
+  color:black;
+  animation-name: colorAnimation3;
+  animation-duration: 1s;
+  transition-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.secondaryButton:active{
+  background:radial-gradient(#96c789,#96c789);
+  color:black;
+  animation: gelatine 0.5s infinite;
+}
 /* Stack the layout on small devices/viewports. */
 @media (max-width: 700px) {
   .top-nav{
