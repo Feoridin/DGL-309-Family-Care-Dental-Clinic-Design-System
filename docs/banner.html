@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=html&amp;skin=sunburst"></script>
+  <link rel="icon" href="images/TEETH.ico" type="image/x-icon">
+  <link rel = "stylesheet" href="clinic.css"><!--css style link-->
+  <link rel = "stylesheet" href="style.css"><!--css style link-->
+  <link rel = "stylesheet" href="colours.css"><!--css style link-->
+  <link rel = "stylesheet" href="spacing.css"><!--css style link-->
+  <link rel = "stylesheet" href="images.css"><!--css style link-->
+  <link rel = "stylesheet" href="navigation.css"><!--css style link-->
+  <link rel = "stylesheet" href="breadcrumbs.css"><!--css style link-->
+  <link rel = "stylesheet" href="forms.css"><!--css style link-->
+  <link rel = "stylesheet" href="banner.css"><!--css style link-->
+  <title>Family Care Dental Clinic Design System</title>
+  <!--Resources: https://youtu.be/1op-PqCGdIA - this link is to display code as code in a browser-->
+  <!--https://alvarotrigo.com/blog/hamburger-menu-css/ - this link is where the hamburger menu code got from-->
+</head>
+<body>
+  <header id="pageHeader">
+    <div class="containerHeader">
+      <div class = "logo"><!--animated logo gif file-->
+        <a href="home.html"><img src="Images/1x/CAREDENTALCLINICDAPITANDIPOLOG.gif" alt="Family Care Dental Clinci Design System" width="130"></a>
+      </div>
+      <h1 class = "title"><a href="home.html">Family Care Dental Clinic Pattern Library</a></h1>
+    </div>
+  </header>
+  <div id="spacer1"><hr class = "hr1"></div>   
+  <article id="mainArticle" class="classArticle">
+    <div class="containerStyle">
+    <details class = "articleTitle" style="font-weight:bold">
+        <summary>Components</summary>
+        <ul style="list-style-type: none">
+            <li><a class = "list1" href="banner.html">Banner</a></li>
+            <li><a class = "list1" href="labels.html">Cards</a></li>
+            <li><a class = "list1" href="carousel.html">Carousel</a></li>         
+        </ul></div>
+    </details> 
+    </div>        
+    <h2 class="articleTitle" id="Colours">Banner</h2> 
+    <hr>
+    <div class = "articleTitle spacingcont">
+    <h4>Hero Banner with Introduction</h4>    
+    </div>
+    <div class="articleTitle containerBodyText herobanner">
+        <img class="hero" src="Images/herobanner.png">    
+    </div>   
+    <details class = "code" style="font-weight:bold">
+      <summary>HTML AND CSS Code</summary>
+        <h4>HTML CODE</h4>
+        <pre class="prettyprint">
+          <xmp>
+            <section id="thehero">
+                <div class="the-inner">
+                  <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h1>Your Complete Dental Care Clinic</h1>
+                </div>
+                </div>
+                    <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <p>Extensive dental expertise, truly state-of-the-art clinic in Dapitan City. Family Care Dental Clinic embodies
+                    all these, with clients guaranteed to experience and enjoy every such aspect with every
+                     service. Owned and operated by <strong>Dr. Glenn Mohametano</strong> of Department of Education. Family Care Dental Clinic
+                      is your hub for comprehensive and highly specialized dental treatments, such as cosmetic dentistry, 
+                      TMJ, and periodontics, among others.</p>
+                </div>
+                </div>
+                </div>
+                </div>
+                </section>
+          </xmp>  
+        </pre>
+        <h4>CSS CODE</h4>
+        <pre class="prettyprint">
+        <xmp>
+        #thehero {
+            width: 100vw;
+                height: 100vh;
+                display: flex;
+                justify-content: flex;
+                align-items: center;
+                text-align: center;
+                color: #fff;
+                background-image: url(Images/todays-rdh-dental-instruments3.png);
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            } 
+            .the-inner {
+                background-color: #96c789;
+                opacity: 80%;
+                width: 50vw;
+                padding: 1rem;
+                border-top-right-radius: 1rem;
+                border-bottom-right-radius: 1rem;   
+            }
+            .the-inner h1{
+            color: #000000;
+            font-family: Helvetica, sans-serif;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 1.4;
+            font-size: 2.1rem;
+            }
+            .the-inner p {
+            color: black;
+            text-align: left;
+            font-size: 1.1rem;  
+            }
+            .the-inner a {
+            color: #000000;
+            }
+          </xmp>  
+        </pre>     
+    </details>
+  </article>
+  <nav>
+    <div class="top-nav" id = "hamburger">
+      <div>
+        <a href="home.html"><img src="Images/LOGOTEETH.png" alt="Family Care Dental Clinci Design System" width="100"></a>
+      </div>
+      <input id="menu-toggle" type="checkbox">
+      <label class="menu-button-container" for="menu-toggle">
+      <div class="menu-button"></div>
+      </label>      
+      <ul class="menu">
+        <li><a class = "list1" href="style.html">Style</a></li>
+        <li><a class = "list1" href="navigation.html">Navigation</a></li>
+        <li><a class = "list1" href="forms.html">Form</a></li>
+        <li><a class = "list1" href="avatar.html">Components</a></li>
+      </ul>
+    </div>    
+  </nav>
+  <nav class="navMain" id="mainNav">
+    <div class = "Guides1"><h3>Style</h3>
+      <ul style="list-style-type: none">
+        <li><img class = "icon1" src="Images/icons/typography.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="style.html">Typography</a></li>
+        <li><img class = "icon1" src="Images/icons/colour.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="colours.html">Colours</a></li>
+        <li><img class = "icon1" src="Images/icons/line-spacing.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="spacing.html">Spacing</a></li>
+        <li><img class = "icon1" src="Images/icons/picture.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="images.html">Images</a></li>         
+      </ul></div>
+    <div class = "Guides1"><h3>Navigation</h3>
+      <ul style="list-style-type: none">
+        <li><img class = "icon1" src="Images/icons/more.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="navigation.html">Hamburger menu</a></li>
+        <li><img class = "icon1" src="Images/icons/button.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="buttons.html">Buttons</a></li>
+        <li><img class = "icon1" src="Images/icons/arrow-right.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="breadcrumbs.html">Breadcrumbs</a></li>         
+      </ul>
+    </div>
+    <div class = "Guides1"><h3>Form</h3>
+      <ul style="list-style-type: none">
+        <li><img class = "icon2" src="Images/icons/forms.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="forms.html">Fields with placeholder text</a></li>
+        <li><img class = "icon2" src="Images/icons/forms.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="forms.html#idlabel">Labels</a></li>
+        <li><img class = "icon2" src="Images/icons/forms.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="forms.html#idSubmitButton">Submit</a></li>        
+      </ul>
+    </div>
+    <div class = "Guides1 Gstyle"><h3>Components</h3>
+      <ul style="list-style-type: none">
+        <li><img class = "icon1" src="Images/icons/user-default.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="avatar.html">Avatar</a></li>
+        <li><img class = "icon1" src="Images/icons/banner.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="banner.html">Banner</a></li>
+        <li><img class = "icon1" src="Images/icons/cards.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="cards.html">Cards</a></li>
+        <li><img class = "icon1" src="Images/icons/carousel.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="carousel.html">Carousel</a></li>         
+        <li><img class = "icon1" src="Images/icons/icons8-google-maps-64.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="map.html">Google Map</a></li> 
+      </ul>
+    </div> 
+    <div class = "Guides1"><h3><a class = "list1" href="website-project-Feoridin/home.html" target="_blank">Sample Site</a></h3></div> 
+  </nav>       
+</body>
+</html>

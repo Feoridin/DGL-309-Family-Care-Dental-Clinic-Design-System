@@ -1,0 +1,239 @@
+.colorcont{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.color{
+    border: 1px solid whitesmoke;
+    padding: 1rem;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
+}
+.color>img{
+    padding: 0 1rem 0;
+}
+.containerBodyText{
+    border: 1px solid whitesmoke;
+    padding: 2rem 5rem 5rem;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+}
+.Gray{
+    background:radial-gradient(white 30%,#b0b0b1);
+}
+.linkgray:hover{
+    color:#69cff9;
+}
+.linkgray:active{
+    color:#b0b0b1;
+}
+.Blue{
+    background:radial-gradient(white 30%,#69cff9);
+}
+.linkblue:hover{
+    color:#96c789;
+}
+.linkblue:active{
+    color:#b0b0b1;
+}
+.linkwhite2{
+    font-style: italic;
+    color:#b3dfdf;
+    text-decoration: underline;
+}
+.linkwhite2:hover{
+    color:#69CFF9;
+}
+.primaryButton{
+    background:radial-gradient(white,#69cff9);
+    color: black;
+    padding: 1rem 3rem;
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid #cbe948;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+    margin: 1rem;
+}
+.primaryButton:hover{
+    background:radial-gradient(white,#69cff9);
+    color:black;
+    animation-name: colorAnimation2;
+    animation-duration: 1s;
+    transition-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.primaryButton:active{
+    background:radial-gradient(#69cff9,#69cff9);
+    color:black;
+    animation: gelatine .5s infinite;
+}
+.secondaryButton{
+    background:radial-gradient(white,#96c789);
+    color: black;
+    padding: 1rem 3rem;
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid #cbe948;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+    margin: 1rem;
+}
+.secondaryButton:hover{
+    background:radial-gradient(#69cff9,#96c789);
+    color:black;
+    animation-name: colorAnimation3;
+    animation-duration: 1s;
+    transition-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.secondaryButton:active{
+    background:radial-gradient(#96c789,#96c789);
+    color:black;
+    animation: gelatine 0.5s infinite;
+}
+.warningButton{
+    background:radial-gradient(white,#fac898);
+    color: black;
+    padding: 1rem 3rem;
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid #cbe948;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+    margin: 1rem;
+}
+.warningButton:hover{
+    background:radial-gradient(white 30%,#fac898);
+    color:black;
+    animation-name: colorAnimation4;
+    animation-duration: 1s;
+    transition-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.warningButton:active{
+    background:radial-gradient(#fac898,#fac898);
+    color:black;
+    animation: gelatine 0.5s infinite;
+}
+.dangerButton{
+    background:radial-gradient(white,#ff6961);
+    color: black;
+    padding: 1rem 3rem;
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid #cbe948;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+    margin: 1rem;
+}
+.dangerButton:hover{
+    background:radial-gradient(white 30%,#ff6961);
+    color:black;
+    animation-name: colorAnimation5;
+    animation-duration: 1s;
+    transition-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.dangerButton:active{
+    background:radial-gradient(#ff6961,#ff6961);
+    color:#002307;
+    animation: gelatine 0.5s infinite;
+}
+.buttons{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.navMain{
+    height:210vh;
+}
+
+/*The font background animation code*/
+@keyframes colorAnimation5{
+    0%{background:radial-gradient(white,#ff6961);}
+    15%{background:radial-gradient(white 5%,#ff6961);}
+    30%{background:radial-gradient(white 10%,#ff6961);}
+    45%{background:radial-gradient(white 20%,#ff6961);}
+    60%{background:radial-gradient(white 30%,#ff6961);}
+    75%{background:radial-gradient(white 20%,#ff6961);}
+    90%{background:radial-gradient(white 10%,#ff6961);}
+    100%{background:radial-gradient(white 5%,#ff6961);}
+}
+@keyframes colorAnimation4{
+    0%{background:radial-gradient(white,#FAC898);}
+    15%{background:radial-gradient(white 5%,#FAC898);}
+    30%{background:radial-gradient(white 10%,#FAC898);}
+    45%{background:radial-gradient(white 20%,#FAC898);}
+    60%{background:radial-gradient(white 30%,#FAC898);}
+    75%{background:radial-gradient(white 20%,#FAC898);}
+    90%{background:radial-gradient(white 10%,#FAC898);}
+    100%{background:radial-gradient(white 5%,#FAC898);}
+}
+@keyframes colorAnimation3{
+    0%{background:radial-gradient(white,#96c789);}
+    15%{background:radial-gradient(white 5%,#96c789);}
+    30%{background:radial-gradient(white 10%,#96c789);}
+    45%{background:radial-gradient(white 20%,#96c789);}
+    60%{background:radial-gradient(white 30%,#96c789);}
+    75%{background:radial-gradient(white 20%,#96c789);}
+    90%{background:radial-gradient(white 10%,#96c789);}
+    100%{background:radial-gradient(white 5%,#96c789);}
+}
+@keyframes colorAnimation2{
+    0%{background:radial-gradient(white,#69cff9);}
+    15%{background:radial-gradient(white 5%,#69cff9);}
+    30%{background:radial-gradient(white 10%,#69cff9);}
+    45%{background:radial-gradient(white 20%,#69cff9);}
+    60%{background:radial-gradient(white 30%,#69cff9);}
+    75%{background:radial-gradient(white 20%,#69cff9);}
+    90%{background:radial-gradient(white 10%,#69cff9);}
+    100%{background:radial-gradient(white 5%,#69cff9);}
+}
+@keyframes gelatine {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.98, 1.02); }
+    50% { transform: scale(1.02, 0.98); }
+    75% { transform: scale(0.98, 1.02); }
+  }
+  .navMain{
+    height:auto;
+   }
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 805px) {
+    .colorcont{
+        display:block;
+        margin: 0 10rem 0 10rem;        
+    }
+    .buttons{
+        display:block;
+    }
+    .containerStyle{
+        margin-top: 15px;
+    }
+   .containerBodyText{
+    width:80vw;
+    padding:1rem;
+    margin-right:1rem;
+    margin-left:1rem;
+   }
+   .buttons{
+    display:flex;
+    flex-direction: column;
+    width: 250px;
+    margin:2rem 2rem 2rem 3rem;
+    padding:2rem;
+   }
+   .colorcont{
+    margin:0px;
+   }
+   .color{
+    margin-right:1.5rem;
+    margin-bottom:1rem;
+   }
+   
+}

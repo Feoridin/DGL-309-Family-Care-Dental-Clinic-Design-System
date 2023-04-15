@@ -1,0 +1,32 @@
+.wrapper-form{
+    background:radial-gradient(white 30%,#b3dfdf);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100vw;
+}
+input[type="reset"] {
+    background:radial-gradient(white,#FF6961);
+    color: black;
+    padding: 1rem 3rem;
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid #cbe948;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+    margin: 1rem;
+    cursor: pointer;
+  }
+  
+  input[type="reset"]:hover {
+    background:radial-gradient(white 30%,#FF6961);
+    color:black;
+    animation-name: colorAnimation5;
+    animation-duration: 1s;
+    transition-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  input[type="reset"]:active{
+    background:radial-gradient(#FF6961,#FF6961);
+    color:black;
+    animation: gelatine .5s infinite;
+  }

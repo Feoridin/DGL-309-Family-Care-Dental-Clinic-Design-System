@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=html&amp;skin=sunburst"></script>
+  <link rel="icon" href="images/TEETH.ico" type="image/x-icon">
+  <link rel = "stylesheet" href="clinic.css"><!--css style link-->
+  <link rel = "stylesheet" href="style.css"><!--css style link-->
+  <link rel = "stylesheet" href="colours.css"><!--css style link-->
+  <link rel = "stylesheet" href="spacing.css"><!--css style link-->
+  <link rel = "stylesheet" href="images.css"><!--css style link-->
+  <title>Family Care Dental Clinic Design System</title>
+  <!--Resources: https://youtu.be/1op-PqCGdIA - this link is to display code as code in a browser-->
+  <!--https://alvarotrigo.com/blog/hamburger-menu-css/ - this link is where the hamburger menu code got from-->
+</head>
+<body>
+  <header id="pageHeader">
+    <div class="containerHeader">
+      <div class = "logo"><!--animated logo gif file-->
+        <a href="home.html"><img src="Images/1x/CAREDENTALCLINICDAPITANDIPOLOG.gif" alt="Family Care Dental Clinci Design System" width="130"></a>
+      </div>
+      <h1 class = "title"><a href="home.html">Family Care Dental Clinic Pattern Library</a></h1>
+    </div>
+  </header>
+  <div id="spacer1"><hr class = "hr1"></div>   
+  <article id="mainArticle" class="classArticle">
+    <div class="containerStyle">
+    <details class = "articleTitle" style="font-weight:bold">
+        <summary>STYLE</summary>
+        <ul style="list-style-type: none">
+            <li><a class = "list1" href="style.html">Typography</a></li>
+            <li><a class = "list1" href="colours.html">Colours</a></li>
+            <li><a class = "list1" href="spacing.html">Spacing</a></li>
+            <li><a class = "list1" href="images.html">Images</a></li>         
+        </ul></div>
+    </details> 
+    </div>        
+    <h2 class="articleTitle" id="Colours">Images</h2> 
+    <hr>
+    <div class = "articleTitle spacingcont">
+    <span>This pattern is for displaying images.</span>    
+    </div>
+    <h3 class="articleTitle">Image Size: 360x240</h3>
+    <div>
+      <div class="containerImage"></div>
+    </div>
+    <details class = "code" style="font-weight:bold">
+        <summary>HTML AND CSS Code</summary>
+        <h4>HTML CODE</h4>
+    <pre class="prettyprint">
+      <xmp>
+        <div class="containerImage">
+          <figure>    
+            <img src="Images/360x240.png" alt="Alternative text for this image"/>
+        </figure>
+        </div>
+      </xmp>  
+    </pre>
+    <h4>CSS CODE</h4>
+    <pre class="prettyprint">
+    <xmp>
+        img{
+          border-radius: 1rem;
+          box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+        }
+    </xmp>  
+    </pre>     
+    </details>
+    <div class = "articleTitle spacingcont">
+    <h3>Image with caption</h3>
+    <span>A caption should be used to provide additional context about the image</span>    
+    </div>
+    <h3 class="articleTitle">Image Size: 500x500</h3>
+    <div>
+      <div class="containerImage2"></div>
+      <span class="font2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eius molestias deserunt minima quasi laborum</span>
+    </div>
+    <details class = "code" style="font-weight:bold">
+        <summary>HTML AND CSS Code</summary>
+        <h4>HTML CODE</h4>
+    <pre class="prettyprint">
+      <xmp>
+        <div class="containerImage">
+          <figure>
+            <img src="Images/500x500.png" alt="Alternative text for this image"/>
+            <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eius molestias deserunt minima quasi laborum</figcaption>
+          </figure>
+        </div>
+      </xmp>  
+    </pre>
+    <h4>CSS CODE</h4>
+    <pre class="prettyprint">
+    <xmp>
+      img{
+        border-radius: 1rem;
+        box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+      }
+    </xmp>  
+    </pre>     
+    </details>
+    <div class = "articleTitle spacingcont">
+      <h3>Linked Image</h3>
+      <span>This example shows a linked image with a caption containing a separate link.</span>    
+      </div>
+      <h3 class="articleTitle">Image Size: 750x500</h3>
+      <div>
+        <div class="containerImage3"><a class="linkImage1" href="#"><img class="image1"src="Images/LinkedImage.png"></a></div>
+        <span class="font2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eius <a href="#" class="linkwhite2">molestias deserunt minima</a>
+           quasi laborum</span>
+      </div>
+      <details class = "code" style="font-weight:bold">
+          <summary>HTML AND CSS Code</summary>
+          <h4>HTML CODE</h4>
+      <pre class="prettyprint">
+        <xmp>
+          <div class="containerImage">
+            <figure>
+              <a href="#"><img src="Images/750x500.png" alt="Alternative text for this image"/></a>
+              <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eius <a href="#">molestias deserunt minima</a> quasi laborum</figcaption>
+            </figure>
+          </div>
+        </xmp>  
+      </pre>
+      <h4>CSS CODE</h4>
+      <pre class="prettyprint">
+      <xmp>
+        img{
+          border-radius: 1rem;
+          box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+        }
+        img:hover{
+          border: 2px solid #cbe948;
+          border-radius: 1rem;   
+        }
+        img:active{
+          border: 5px solid #cbe948;
+          border-radius: 1rem;   
+        }
+      </xmp>  
+      </pre>     
+      </details>   
+  </article>
+  <nav>
+    <div class="top-nav" id = "hamburger">
+      <div>
+        <a href="home.html"><img src="Images/LOGOTEETH.png" alt="Family Care Dental Clinci Design System" width="100"></a>
+      </div>
+      <input id="menu-toggle" type="checkbox">
+      <label class="menu-button-container" for="menu-toggle">
+      <div class="menu-button"></div>
+      </label>      
+      <ul class="menu">
+        <li><a class = "list1" href="style.html">Style</a></li>
+        <li><a class = "list1" href="navigation.html">Navigation</a></li>
+        <li><a class = "list1" href="forms.html">Form</a></li>
+        <li><a class = "list1" href="avatar.html">Components</a></li>
+      </ul>
+    </div>    
+  </nav>
+  <nav class="navMain" id="mainNav">
+    <div class = "Guides1 Gstyle"><h3>Style</h3>
+      <ul style="list-style-type: none">
+        <li><img class = "icon1" src="Images/icons/typography.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="style.html">Typography</a></li>
+        <li><img class = "icon1" src="Images/icons/colour.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="colours.html">Colours</a></li>
+        <li><img class = "icon1" src="Images/icons/line-spacing.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="spacing.html">Spacing</a></li>
+        <li><img class = "icon1" src="Images/icons/picture.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="images.html">Images</a></li>         
+      </ul></div>
+    <div class = "Guides1"><h3>Navigation</h3>
+      <ul style="list-style-type: none">
+        <li><img class = "icon1" src="Images/icons/more.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="navigation.html">Hamburger menu</a></li>
+        <li><img class = "icon1" src="Images/icons/button.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="buttons.html">Buttons</a></li>
+        <li><img class = "icon1" src="Images/icons/arrow-right.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="breadcrumbs.html">Breadcrumbs</a></li>         
+      </ul>
+    </div>
+    <div class = "Guides1"><h3>Form</h3>
+      <ul style="list-style-type: none">
+        <li><img class = "icon2" src="Images/icons/forms.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="forms.html">Fields with placeholder text</a></li>
+        <li><img class = "icon2" src="Images/icons/forms.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="forms.html#idlabel">Labels</a></li>
+        <li><img class = "icon2" src="Images/icons/forms.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="forms.html#idSubmitButton">Submit</a></li>        
+      </ul>
+    </div>
+    <div class = "Guides1"><h3>Components</h3>
+      <ul style="list-style-type: none">
+        <li><img class = "icon1" src="Images/icons/user-default.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="avatar.html">Avatar</a></li>
+        <li><img class = "icon1" src="Images/icons/banner.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="banner.html">Banner</a></li>
+        <li><img class = "icon1" src="Images/icons/cards.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="cards.html">Cards</a></li>
+        <li><img class = "icon1" src="Images/icons/carousel.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="carousel.html">Carousel</a></li>         
+        <li><img class = "icon1" src="Images/icons/icons8-google-maps-64.png" alt="icon Dental Clinic Dapitan"><a class = "list1" href="map.html">Google Map</a></li> 
+      </ul>
+    </div> 
+    <div class = "Guides1"><h3><a class = "list1" href="website-project-Feoridin/home.html" target="_blank">Sample Site</a></h3></div> 
+  </nav>     
+</body>
+</html>

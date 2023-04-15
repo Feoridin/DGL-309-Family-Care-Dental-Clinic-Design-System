@@ -1,0 +1,112 @@
+.primaryfontcontainer{
+    display:flex;
+    flex-direction: row;
+    padding: 1rem;
+    margin-left:2rem;
+    
+}
+.primaryfontregular, .primaryfontitalic, .primaryfontbold{
+    background-image:linear-gradient(to bottom,white,#96c789);
+    margin: 1rem;
+    font-family: Helvetica, sans-serif;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid whitesmoke;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+}
+/*The font background animation code*/
+@keyframes colorAnimation{
+    0%{background-image:linear-gradient(to bottom,white,#96c789);}
+    15%{background-image:linear-gradient(to bottom,white 5%,#96c789);}
+    30%{background-image:linear-gradient(to bottom,white 10%,#96c789);}
+    45%{background-image:linear-gradient(to bottom,white 15%,#96c789);}
+    60%{background-image:linear-gradient(to bottom,white 10%,#96c789);}
+    75%{background-image:linear-gradient(to bottom,white 5%,#96c789);}
+    90%{background-image:linear-gradient(to bottom,white 2%,#96c789);}
+    100%{background-image:linear-gradient(to bottom,white,#96c789);}
+}
+.primaryfontregular:hover, .primaryfontitalic:hover, .primaryfontbold:hover,
+.primaryfontregular2:hover, .primaryfontitalic2:hover, .primaryfontbold2:hover{
+    background-image:linear-gradient(to bottom,white,#96c789);
+    animation-name: colorAnimation;
+    animation-duration: 2s;
+    transition-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.primaryfontregular2, .primaryfontitalic2, .primaryfontbold2{
+    background-image:linear-gradient(to bottom,white,#96c789);
+    margin: 1rem;    
+    font-family: Verdana, sans-serif;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid whitesmoke;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+}
+pre.prettyprint{
+    font-size:larger;
+    overflow-x:scroll;
+    width: 90%
+}
+.articleTitle{
+    margin-right:1rem;
+}
+.containerStyle{
+    padding-top: 0.5rem;
+    font-size: large;    
+}
+table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border-radius: 0.5rem;    
+}
+.table{
+    margin-left: 2rem;
+    width:94%;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+    margin-bottom:2rem;
+}  
+td, th {
+    border: 1px solid #cbe948;
+    text-align: center;
+    padding: 8px;
+}  
+tr:nth-child(even) {
+    background-color: #96C789;
+}
+.code{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #cbe948;
+    margin-right:0;
+    margin-left:0;
+}
+.Gstyle>h3{
+    font-style: italic;
+    text-decoration: underline;
+}
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 992px) {
+.primaryfontcontainer{
+    flex-direction:column;
+}
+.primaryfontregular, .primaryfontitalic, .primaryfontbold{
+    width: 80%;
+}
+.primaryfontregular2, .primaryfontitalic2, .primaryfontbold2{
+    width: 80%;
+}
+.articleTitle{
+    margin-right:2rem;
+}
+.table{
+    width:90%;
+    margin-right:2rem;
+}
+pre.prettyprint{
+    margin:0px;
+    overflow-x:scroll;
+    width:320px;
+}
+
+}
+
+

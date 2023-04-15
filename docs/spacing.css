@@ -1,0 +1,124 @@
+.spacingGrid{
+    padding-left: 2rem;
+}
+.listSpacing{
+    color:#b0b0b9;
+    font-style: italic;
+}
+.box{
+    width:2px;
+    height:2px;
+    background-color:#96c789;
+    padding:0;
+    margin:0;
+}
+.table1{
+    margin-left: 2rem;
+    width:94%;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+
+}  
+td.table1, th.table1{
+    border: 1px solid #cbe948;
+    text-align: center;
+    padding: 4px;
+}
+tr:nth-child(even){
+    background-color: white;
+}
+.box2{
+    width:0.25rem;
+    height:0.25rem;
+}
+.box3{
+    width:0.5rem;
+    height:0.5rem;
+}
+.box4{
+    width:0.75rem;
+    height:0.75rem;
+}
+.box5{
+    width:1rem;
+    height:1rem;
+}
+.box6{
+    width:1.5rem;
+    height:1.5rem;
+}
+.box7{
+    width:2rem;
+    height:2rem;
+    margin-top:1rem;
+}
+.box8{
+    width:2.5rem;
+    height:2.5rem;
+}
+.box9{
+    width:3rem;
+    height:3rem;
+}
+.box10{
+    width:4rem;
+    height:4rem;
+}
+.box11{
+    width:20rem;
+    height:2rem;
+    background-color:#69cff9;
+    font-size: smaller;
+    text-align: center;
+    margin-top:1rem;
+}
+.box12{
+    width:20rem;
+    height:1rem;
+    background-color:#69cff9;
+    font-size: smaller;
+    text-align: center;
+    margin-bottom:1rem;
+}
+.boxcont{
+    display:flex;
+    flex-direction: row;
+    margin-left:2rem;
+    margin-right:2rem;
+    margin-top:0;
+}
+.label{
+    margin-left: 2rem;
+}
+.labelcont{
+    margin-top:2rem;
+    padding:0;
+    background-color: white;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 20px 20px -14px rgba(0, 0, 0, 0.25);
+    margin-left:2rem;
+    width: 400px;
+}
+.navMain{
+    height:auto;
+}
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 805px) {
+.containerBodyText{
+    width:100vw;
+    padding:0;
+    margin:0;
+   }
+   .table1{
+    width:90vw;
+   }
+   .labelcont{
+    width: 80vw;
+    padding:0;
+   }
+   .box12{
+    margin-bottom:1rem;
+   }
+   .articleTitle{
+    margin-top:1rem;
+   }
+}

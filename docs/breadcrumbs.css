@@ -1,0 +1,30 @@
+.breadcrumb{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+}
+.breadcrumbText{
+    width:5rem;
+    transform: skew(-20deg);
+    background-color: #96c789;
+    text-align: center;
+    margin-left:-0.85rem;   
+    padding: .5rem 0.5rem .5rem 0.5rem;
+    border-left:1px solid #b0b0b1;
+    border-right:1px solid #b0b0b1;
+    border-top-right-radius: 0.5rem;
+}
+.bText{
+    background-color: white;
+    border: 1px solid #b0b0b1;
+}
+.hr4{
+    margin-top:-1.5rem;
+    border: 4px ridge #cbe948;
+}
+.breadcrumbText:hover{
+    font-size: 101%;
+}
+.bText:hover{
+    font-size:100%;
+}
