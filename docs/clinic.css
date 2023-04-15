@@ -1,0 +1,340 @@
+body{
+    display: grid;
+    grid-template-areas: 
+      "header header"
+      "spacer spacer"
+      "nav article";
+    grid-template-rows: 120px 25px auto;  
+    grid-template-columns: 20% 80%;
+    grid-row-gap: 0;
+    grid-column-gap: 0;
+    height: 100vh;
+    margin: 0;
+    }  
+article, nav{
+    padding: 0;
+    font-family: Verdana, sans-serif;    
+    }
+    #spacer1{
+        grid-area: spacer;
+    }
+#pageHeader{
+    grid-area: header;
+    }
+#mainArticle { 
+    grid-area: article;      
+    }
+#mainNav { 
+    grid-area: nav; 
+    }
+#hamburger{
+    grid-area: hamburger;
+}
+#idFooter{
+    grid-area: footer;
+}
+header{
+    padding: 0;
+    background: white;    
+    }
+.containerHeader{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;    
+ } 
+.logo{
+  padding: 0;
+  margin: 0;
+}
+.title{
+    margin-top: 2rem;
+    font-family: Helvetica;
+}
+li{
+  padding: 0.5rem;
+  display:flex;
+  justify-content: left;
+}
+.icon1{
+  margin-right:12px;
+  width: 30px;
+}
+.icon2{
+  margin-right:12px;
+  width:30px;
+  height:30px;
+}
+a{
+  font-weight: bold;
+  color: black;
+}
+a:link {
+  color:black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 101%;
+}
+a:active {
+  color: #b0b0b9;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }  
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+}  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}  
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}  
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: transparent;
+}  
+  .dropdown:hover .dropbtn {
+    background-color: #69cff9;
+}
+.navMain{
+    background:radial-gradient(white 50%,#69cff9);
+    background-size: cover;
+    border-right: 3px solid #cbe948;
+    margin-top: -2px;
+    height:auto;   
+}
+.hr1{
+    border-color:#cbe948;
+    border-style: ridge;
+    border-width: 0.5rem;   
+    margin-bottom: 0;      
+}
+hr{
+    border-color:#cbe948;
+    border-style: ridge;
+    border-width: 0.25rem;      
+}
+.classArticleimage{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;    
+}
+.classArticleimage>img{
+    max-width:40%;    
+}
+.Guides1{
+    padding-left: 1rem;
+}
+h1, h2, h3, h4{
+    font-family: Helvetica,sans-serif;
+}
+.articleTitle{
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+}
+p{
+    margin-left: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+h1{
+    font-size: 26px;
+}
+h2{
+    font-size:24px;
+}
+/* Stack the layout on small devices/viewports. */
+@media all and (min-width: 992px) {
+    .top-nav{
+        visibility:hidden;
+        margin-top: -18rem;
+    }
+    .containerStyle{
+        visibility: collapse;
+        margin-bottom: -2rem;
+    }
+    }
+@media all and (max-width: 992px) {
+    body { 
+      grid-template-areas:        
+        "hamburger"              
+        "nav"
+        "article"
+        "header"
+        "spacer";
+      grid-template-rows: 10% 2% auto 1fr;  
+      grid-template-columns: 1fr;
+   }
+.title{
+    font-size: x-large;
+    margin-top: 1.25rem;
+    margin-left: -1rem;
+   }
+.hr2{
+    margin: 0;
+    border-width: 0.5rem;    
+}
+.hr1{
+    margin-top: -0.75rem;
+    visibility: hidden;   
+}
+.classArticle{
+    margin-top:-1.75rem;
+}
+.classArticleimage>img{
+    max-width: 80%;
+}
+.navMain{
+    visibility:hidden;
+    height: 0;
+    margin-bottom: 0rem;    
+}
+.containerHeader {
+    visibility: hidden;
+    margin-top: 0rem;
+}
+
+/*Hamburger Menu CSS*/
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background:radial-gradient(white 30%,#69cff9);
+    background-size: cover;
+    height: 50px;
+    padding: 1em;
+    top: 0;
+    position: relative;
+    border-bottom: 3px solid #cbe948;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menu > li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle {
+    display: none;
+  }
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: black;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+  @media (max-width: 700px) {
+    .menu-button-container {
+      display: flex;
+    }
+    .menu {
+      position: absolute;
+      top: 48px;
+      margin-top: 30px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: -1px;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+      border: 1px solid #cbe948;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      padding-top: 2rem;
+      width: 100%;
+      color: black;
+      background:radial-gradient(white 30%,#69cff9);
+      opacity: 98%;
+    }
+    .menu > li:not(:last-child) {
+      border-bottom: 1px solid #cbe948;
+    }
+    .menu>li>a{
+        color: black;
+    }
+    .list1{
+      margin-top: 0.5rem;
+    }
+  } 
+}
