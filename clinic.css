@@ -145,7 +145,8 @@ hr{
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    margin-top: 1rem;    
+    margin-top: 1rem; 
+    
 }
 .classArticleimage>img{
     max-width:40%;    
@@ -171,6 +172,9 @@ h1{
 }
 h2{
     font-size:24px;
+}
+.navMain{
+  height: 100vh;
 }
 /* Stack the layout on small devices/viewports. */
 @media all and (min-width: 992px) {
@@ -211,7 +215,7 @@ h2{
     margin-top:-1.75rem;
 }
 .classArticleimage>img{
-    max-width: 80%;
+  max-width:80%;
 }
 .navMain{
     visibility:hidden;
